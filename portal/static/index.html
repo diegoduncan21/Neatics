@@ -24,7 +24,16 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-
+        <script type="text/javascript">
+            var profile_id="114992651870444";
+            var app_id = "169233136600400";
+            var app_secret = "1b332a16e15f443d0c300fa8840ec538";
+            var token = $.get("https://graph.facebook.com/oauth/access_token?grant_type=client_credentials&client_id="+app_id+"&client_secret="+app_secret+"",function(data) {
+                var feed=$.getJSON("https://graph.facebook.com/"+profile_id+"?fields=feed.fields(message)&"+data+"")
+                console.log(feed)
+            })
+            
+        </script>
         <script src="js/main.js"></script>
 
         <script>
