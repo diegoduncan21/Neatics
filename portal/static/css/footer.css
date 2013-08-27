@@ -1,0 +1,168 @@
+@import url(http://fonts.googleapis.com/css?family=Asap);
+
+
+
+@media screen {
+  	footer {
+		background-color: #004D83;
+		height : 10em;
+	}
+
+	.header {
+		margin-left: -35px;
+	}
+
+	#contenedor {
+		height: 100%;
+		min-width: 768px;
+		width: 100%;
+	}
+
+	#logos_redes {
+		float: left;
+		height: 100%;
+		margin: 10px;
+		min-width: 33%;
+	}
+
+	#mapa_sitio {
+		color: white;
+		display: inline-block;
+		float: left;
+		font-family: Asap;
+		font-size: 18px;
+		min-width: 55%;
+		padding: 20px;
+	}
+
+	#mapa_sitio div {
+		display: inline-block;
+		margin: 10px;
+		margin-top: -15px;
+	}
+
+	#mapa_sitio li {
+		list-style-type: none;
+	}
+
+	#mapa_sitio a {
+		color: white;
+		text-decoration:none; 
+	}
+
+	#face {
+		background: url("/static/img/sprites.png") -165px -60px;
+		height: 55px;
+		margin: 10px;
+		margin-right: 100px;
+		width: 51px;
+	}
+
+	.cincuenta {
+		float: left;
+		width: 50%;
+	}
+
+	#rss {
+		background: url("/static/img/sprites.png") -65px -60px;
+		height: 55px;
+		margin: 10px;
+		width: 51px;
+	}
+
+	#tw {
+		background: url("/static/img/sprites.png") -114px -60px;
+		height: 55px;
+		margin: 10px;
+		width: 51px;
+	}
+
+	#email {
+		background: url("/static/img/sprites.png") -14px -60px;
+		height: 55px;
+		margin: 10px;
+		width: 51px;
+	}
+}
+
+@media (max-width: 1024px) {
+  	footer {
+		background-color: #004D83;
+		height : 10em;
+	}
+
+	.header {
+		margin-left: -35px;
+	}
+
+	#contenedor {
+		height: 100%;
+		min-width: 500px;
+	}
+
+	#logos_redes {
+		float: left;
+		height: 100%;
+		margin: 10px;
+		min-width: 33%;
+	}
+
+	#mapa_sitio {
+		color: white;
+		display: inline-block;
+		float: left;
+		font-family: Asap;
+		font-size: 13px;
+		min-width: 400px;
+		padding: 20px;
+	}
+
+	#mapa_sitio div {
+		display: inline-block;
+		margin: 10px;
+		margin-top: -15px;
+	}
+
+	#mapa_sitio li {
+		list-style-type: none;
+	}
+
+	#mapa_sitio a {
+		color: white;
+		text-decoration:none; 
+	}
+
+	#face {
+		background: url("/static/img/sprites.png") -165px -60px;
+		height: 55px;
+		margin: 10px;
+		margin-right: 100px;
+		width: 51px;
+	}
+
+	.cincuenta {
+		float: left;
+		width: 50%;
+	}
+
+	#rss {
+		background: url("/static/img/sprites.png") -65px -60px;
+		height: 55px;
+		margin: 10px;
+		width: 51px;
+	}
+
+	#tw {
+		background: url("/static/img/sprites.png") -114px -60px;
+		height: 55px;
+		margin: 10px;
+		width: 51px;
+	}
+
+	#email {
+		background: url("/static/img/sprites.png") -14px -60px;
+		height: 55px;
+		margin: 10px;
+		width: 51px;
+	}
+}

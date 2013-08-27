@@ -312,7 +312,7 @@ class Catalogos(models.Model):
 
 class ProductosCatalogos(models.Model):
 	idProducto = models.ForeignKey(Productos)
-	idCatalogo = models.ForeignKey(Catalagos)
+	idCatalogo = models.ForeignKey(Catalogos)
 
 	def __unicode__(self):
 		return "%s - %s".format(self.idProducto, self.idCatalogo)
