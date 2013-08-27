@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/infomacionHome.css">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="contenedorInfos">
+            <div id="tituloInfo">
+                <div id="iconoTituloInfo">
+                    <img src="img/iconoTituloInfo.png">
+                </div>
+                <div>
+                    <h1 id="textTituloInfo">Noticias</h1>
+                </div>
+            </div>
+            <div class="contenedorNoticia">
+                <div class="tituloNotica">
+                    <a class="textTituloNoticia" href="http://www.diarionorte.com/article/94266/el-dia-mas-frio-de-agosto-dejo-su-marca-con-heladas-en-varios-puntos-de-la-provincia" target="_blanck">
+                        El día más frío de agosto dejó su marca con heladas en varios puntos de la provincia
+                    </a>
+                </div>
+                <div class="imgNoticia">
+                    <img whith="250px" height="150px" src="img/imgEjemploInfo/info1.jpg">
+                </div>
+                <div class="contenedorTextoNoticia">
+                    <p class="textoNoticia">Los 2.6°C bajo cero en Resistencia a las 7.30 de la mañana y los 3.4°C bajo cero de Sáenz Peña a las 8, fueron las temperaturas mínimas más frías registradas en el mes de agosto. Julio sigue teniendo en su marca el día más frío del año con una mínima de 3°C bajo cero el martes 23 en la capital chaqueña y 5.8 °C bajo cero ese mismo día en la termal.</p>
+                </div>
+            </div>
+            <div class="contenedorNoticia">
+                <div class="tituloNotica">
+                    <a class="textTituloNoticia" href="http://www.diarionorte.com/article/94265/malestar-de-vecinos-por-la-proliferacion-de-basurales-espontaneos-en-barrios-de-la-ciudad%EF%BB%BF" target="_blanck">
+                        Malestar de vecinos por la proliferación de basurales espontáneos en barrios de la ciudad
+                    </a>
+                </div>
+                <div class="imgNoticia">
+                    <img whith="250px" height="150px" src="img/imgEjemploInfo/info2.jpg">
+                </div>
+                <div class="contenedorTextoNoticia">
+                    <p class="textoNoticia">SAENZ PEÑA (Agencia) - Los vecinos del barrio Solidario se comunicaron con NORTE para exponer un lamentable hecho que se registra en este sector de la ciudad, relacionado a la aparición de un nuevo basural espontáneo. Según la denuncia hecha a este diario, “hay autos y camionetas nuevas que vienen del centro y arrojan sus bolsas de basura, como si fuera tierra de nadie”.</p>
+                </div>
+            </div>
+            <div class="contenedorNoticia">
+                <div class="tituloNotica">
+                    <a class="textTituloNoticia" href="http://www.diarionorte.com/article/94257/tras-el-fallo-adverso-argentina-buscara-reabrir-por-tercera-vez-el-canje-de-la-deuda" target="_blanck">
+                        Tras el fallo adverso Argentina buscará reabrir por tercera vez el canje de la deuda
+                    </a>
+                </div>
+                <div class="imgNoticia">
+                    <img whith="250px" height="150px" src="img/imgEjemploInfo/info3.jpg">
+                </div>
+                <div class="contenedorTextoNoticia">
+                    <p class="textoNoticia">El gobierno argentino enviará un proyecto de ley al Congreso para reabrir por tercera vez el canje de deuda, luego del fallo adverso de la Justicia norteamericana por la demanda de fondos buitre, y a la vez reemplazará bonos emitidos bajo legislación de Estados Unidos por otros con normativa local, para evitar posibles embargos</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+        <script type="text/javascript">
+            var profile_id="114992651870444";
+            var app_id = "169233136600400";
+            var app_secret = "1b332a16e15f443d0c300fa8840ec538";
+            var token = $.get("https://graph.facebook.com/oauth/access_token?grant_type=client_credentials&client_id="+app_id+"&client_secret="+app_secret+"",function(data) {
+                var feed=$.getJSON("https://graph.facebook.com/"+profile_id+"?fields=feed.fields(message)&"+data+"")
+                console.log(feed)
+            })
+            
+        </script>
+        <script src="js/main.js"></script>
+        <script src="js/infomacionHome.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
