@@ -1,5 +1,4 @@
-# Create your views here.
 from django.shortcuts import render
 
-def home(request):
-	return render(request,"home.html")
+def footer(request):
+	return render(request, 'footer.html')
