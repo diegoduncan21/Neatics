@@ -12,7 +12,7 @@
 		margin-left: -35px;
 	}
 
-	#contenedor {
+	#footer {
 		height: 100%;
 		min-width: 768px;
 		width: 100%;
@@ -21,7 +21,6 @@
 	#logos_redes {
 		float: left;
 		height: 100%;
-		margin: 10px;
 		min-width: 33%;
 	}
 
@@ -32,12 +31,13 @@
 		font-family: Asap;
 		font-size: 18px;
 		min-width: 55%;
-		padding: 20px;
+		margin-top: 30px;
+		margin-left: 30px;
 	}
 
 	#mapa_sitio div {
 		display: inline-block;
-		margin: 10px;
+		margin: 25px;
 		margin-top: -15px;
 	}
 
@@ -95,7 +95,7 @@
 		margin-left: -35px;
 	}
 
-	#contenedor {
+	#footer {
 		height: 100%;
 		min-width: 500px;
 	}
