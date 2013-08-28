@@ -23,8 +23,14 @@ body{
 
 /*Clase contenedor, para que el contenido se vea relativamente a 1024px */
 .container{
-	width: 75%;
+	width: 100%;
 	margin: 0 auto;
+}
+
+.containerHeader{
+	width: 100%;
+	margin: 0 auto;
+	position: absolute;	
 }
 
 /*--------------------------------------------------------------*/
@@ -33,19 +39,23 @@ body{
 header{
 	height: 200px;
 	width: 100%;
-	background: url("/../static/img/back-header.png") no-repeat 190px 0px #01466F;
+	background: #01466F;
+} /*url("/../static/img/back-header.png") no-repeat 190px 0px*/
+
+#headerDerecho{
+	background: url("/../static/img/back-header.png") no-repeat -415px -10px;
+	float: right;
+	position: relative;
+	width: 620px;
+	height: 200px;
 }
 
 #barraHeader{
-	margin: 0;
 	color: #fff;
-	min-width: 222px;
-	max-width: 250px;
-	border-radius: 0 0 5px 5px;
-	left: 85%;
-	width: 25%;
-	height: 40px;
-	background: #3b8686;
+	border-radius: 0 0 5px 15px;
+	float: right;
+	width: 40%;
+	background: #3c8686;
 	position: relative;
 	text-align: center;
 }
@@ -80,11 +90,11 @@ header{
 
 
 #menuPerfil{
-	margin: 13.1% 0;
-	left: 63%;
 	position: relative;
-	width: 40%;
-	height: 35px;
+	width: 400px;
+	top: 56.8%;
+	float: right;
+	height: 40px;
 	background: #cccccc;
 	border-radius: 5px 5px 0 0;
 	text-align: center; 
@@ -197,6 +207,72 @@ nav ul li a{
 	overflow: hidden;
 }
 
+#contenedorRedesSociales{
+	height:450px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	width: 100%;
+}
+
+#contenedorPrincipalfacebook{
+	width: 320px;
+	float: right;
+	margin: 0px auto;
+	border: 5px solid #0F14AE;
+	border-radius: 5px;
+	height: 435px;
+}
+
+#imgFace{
+	background: url("/static/img/sprites.png") -165px -60px;
+	width: 51px;
+	height: 55px;
+	float: left;
+	margin-left: 15px;
+}
+
+#tituloFace{
+	height: 60px;
+	background-color: #0F14AE;
+}
+
+#textFaceTitulo{
+	color: white;
+	padding-top: 12px;
+	padding-bottom: -12px;
+	margin-bottom: -12px;
+}
+
+#contenidoFace{
+	padding:10px;
+}
+
+.contenedorFace{
+	width: 45%;
+	float: left;
+	position: relative;
+	margin-right: 50px;
+}
+
+.contenedorTwit{
+	width: 45%;
+	float: left;
+	position: relative;
+}
+
+#contenedorPrincipalTwit{
+	width: 320px;
+	margin: 0px auto;
+	border: 5px solid #5794F7;
+	border-radius: 5px;
+	height: 435px;
+}
+
+#tituloFace{
+	height: 60px;
+	background-color: #0F14AE;
+}
+
 /*------------------------------------------------------------------------*/
 
 /*Bloque de noticias*/
@@ -216,3 +292,33 @@ nav ul li a{
 }
 
 /*---------------------------------------------------------------------------*/
+
+/*------------------------slider de abajo------------------------------------*/
+#banner-logo{
+	background-color: rgb(255,254,231);
+	height: 87px;
+	padding: 5px 0px;
+	position: absolute;
+	overflow: hidden;
+}
+#logos{
+	overflow: hidden;
+	position: absolute;
+}
+.logo{
+	height: 87px;
+	float: left;
+	margin-left: 10px;
+}
+#utn{
+	background: url('../img/footer-slider.png') -305px no-repeat;
+	width: 300px;
+}
+#ssich{
+	background: url('../img/footer-slider.png') -680px no-repeat;
+	width: 265px;
+}
+#polo{
+	background: url('../img/footer-slider.png') -1015px no-repeat;
+	width: 270px;
+}

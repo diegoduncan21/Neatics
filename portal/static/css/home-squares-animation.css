@@ -13,9 +13,8 @@
 }
 
 #squares-wrapper {
-	
-	display: inline-block;
 	position:absolute;
+	float: left;
 	top:-30px;
 	width:324px;
 }
