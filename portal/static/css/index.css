@@ -268,9 +268,24 @@ nav ul li a{
 	height: 435px;
 }
 
-#tituloFace{
+#tituloTwit{
 	height: 60px;
-	background-color: #0F14AE;
+	background-color: #5794F7;
+}
+
+#imgTwit{
+	background: url("/static/img/sprites.png") -114px -60px;
+	width: 51px;
+	height: 55px;
+	float: left;
+	margin-left: 15px;
+}
+
+#textTwitTitulo{
+	color: white;
+	padding-top: 12px;
+	padding-bottom: -12px;
+	margin-bottom: -12px;
 }
 
 /*------------------------------------------------------------------------*/
