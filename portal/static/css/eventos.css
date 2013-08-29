@@ -1,0 +1,64 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,300italic, 500italic);
+@import url(http://fonts.googleapis.com/css?family=Asap);
+@import url(http://fonts.googleapis.com/css?family=Rosario);
+
+#contenedor {
+	width: 100%;
+	background: white;
+}
+
+#logo {
+	width: 100%;
+	background: white;
+	display:inline-block;
+}
+#eventos{
+	width: 100%;
+	display:inline-block;
+	background: #C0dcae;
+	border-radius: 5px;
+}
+
+#conevento{
+	width: 32%;
+	display:inline-block;
+	margin: 3px;
+}
+
+.imagen {
+	margin-top: 10px;
+	width: 100%;
+	height: 80px;
+	background: black;
+	border-radius: 5px;
+	border:dotted 1px white;
+	overflow: hidden;
+}
+
+.titulo{
+	width: 100%;
+	margin-top: 2px;
+	text-align: center;
+	font-family: 'Asap', sans-serif;
+	font-weight: 200;
+}
+
+.texto{
+	width:100%;
+	text-align: left;
+	font-size: 12px;
+	font-family: 'Asap', sans-serif;
+}
+.eve{
+	text-align: left;
+	font-size: 25px;
+	font-family: 'Roboto', sans-serif;
+	color: #419954; 
+	font-style: italic;
+	font-weight: 400;
+}
+
+.d {
+	display:inline-block;
+	vertical-align: top;	
+}
