@@ -1,7 +1,11 @@
-/*Imports Fonts Google*/
-@import url(http://fonts.googleapis.com/css?family=Roboto:500,300italic, 500italic);
-@import url(http://fonts.googleapis.com/css?family=Asap);
-@import url(http://fonts.googleapis.com/css?family=Rosario);
+/*Bloque de noticias*/
+
+#noticias{
+	position: relative;
+	width: 100%;
+	height: auto;
+	display: inline-table;
+}
 
 ::-webkit-scrollbar-track {
       background-color: #BFC0C1;

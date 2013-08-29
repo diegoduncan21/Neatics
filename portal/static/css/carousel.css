@@ -1,3 +1,6 @@
+#myCarousel img{
+	border-radius: 8px;
+}
 .carousel-inner{
 	background-color: rgb(255,254,231);
 }

@@ -2,6 +2,11 @@
 @import url(http://fonts.googleapis.com/css?family=Asap);
 @import url(http://fonts.googleapis.com/css?family=Rosario);
 
+#even{
+	float: left;
+	width: 72%;
+}
+
 #contenedor {
 	width: 100%;
 	background: white;

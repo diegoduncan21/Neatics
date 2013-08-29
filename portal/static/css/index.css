@@ -17,47 +17,34 @@
 /*Cuerpo*/
 body{
 	background: #fffee5;
+	margin:0px auto;
+	width: 1024px;
 }
 
 /*------------------------------------------------------*/
-
-/*Clase contenedor, para que el contenido se vea relativamente a 1024px */
-
-.conternedorPrincipal{
-	width: 1024px;
-	margin: 0px auto;
-}
-
 .container{
-	width: 100%;
-	margin: 0 auto;
+	float: left;
+	width: 80%;
 }
 
 .containerHeader{
 	width: 1024px;
 	margin: 0 auto;
 	position: absolute;	
+	background: #01466F;
 }
-
-.containerMenuPrincipal{
-	width: 100%;
-	margin: 0 auto;
-}
-
-/*--------------------------------------------------------------*/
-
 /*Cabecera del sitio*/
 header{
-	height: 200px;
+	height: 211px;
 	width: 1024px;
-	background: #01466F;
-} /*url("/../static/img/back-header.png") no-repeat 190px 0px*/
+	background: #bbb;
+} 
 
 #headerDerecho{
 	float: right;
 	position: relative;
 	width: 420px;
-	height: 220px;
+	height: 205px;
 }
 
 
@@ -102,7 +89,7 @@ header{
 
 #contImgHeader{
 	margin-left: 60px;
-	margin-top: 83px;
+	margin-top: 84px;
 }
 
 
@@ -114,22 +101,9 @@ header{
 	background: #bbb;
 	border-radius: 5px 5px 0 0;
 	text-align: center; 
+	top: 5px;
 }
 
-/*#menuPerfil ul li{
-	display: inline-block;
-	margin: 7px;
-}
-
-#menuPerfil ul li a{
-	text-decoration: none;
-	color: #0b486b;
-	font-family: 'Rosario',sans-serif;
-	font-style: italic;
-	font-size: 20px;
-	font-weight: bold;
-}
-*/
 .perfil{
 	width: 30%;
 	height: 100%;
@@ -145,40 +119,12 @@ header{
 
 .perfil1{
 	width: 40%;
-	height: 100%;
-	float: left;
-	padding-top: 6px;
-	text-decoration: none;
-	color: #0b486b;
-	font-family: 'Rosario',sans-serif;
-	font-style: italic;
-	font-size: 16px;
-	font-weight: bold;
 }
 
 .perfil:hover{
 	background-color: #3c8686;
 	color: white;
 	border-radius: 3px;
-}
-
-.perfil1:hover{
-	background-color: #3c8686;
-	color: white;
-}
-
-/*---------------------------------------------------------------*/
-
-.secreto{
-	width: 100%;
-	height: 6px;
-	background-color: #bbb;
-}
-
-.secreto1{
-	width: 100%;
-	height: 6px;
-	background-color: #3c8686;
 }
 
 /*Menu principal*/
@@ -203,199 +149,9 @@ nav ul li a{
 	text-decoration: none;
 }
 
-/*---------------------------------------------------------------------*/
-
-/*Buscador Principal*/
-#quebuscas{
-	margin: 1% auto;
-	border-radius: 0.5em;
-	background: #8d9906;
-	width: 80%;
-	height: 70px;
-
-}
-
-#queBuscas label{
-	color: #fff;
-	margin: 0.1em 1.3em;
-	font-size: 1.5em;
-	font-family: 'Roboto', sans-serif;
-	font-style: italic;
-	font-weight: 300;
-}
-
-#queBuscas input{
-	font-size: 1em;
-	color: #55595c;
-	margin: 0 1.5em;
-	height: 25px;
-	border-radius: 0.4em;
-	width: 70%;
-}
-
-#contenedorLupita{
-	width: 26%;
-	height: 47px;
-	position: relative;
-	float: right;
-	top: -40px;
-}
-
-#imgLupa{
-	margin-top: 10px;
-}
-
-/*------------------------------------------------------------------------*/
-
-/*Slider Principal del Sitio*/
-#sliderPrincipal{
-	position: relative;
-	display: block;
-	width: 100%;
-	height: 360px;
-	border-radius: 10px;
-	margin-bottom: 10px;
-}
-
-#sliderPrincipal img{
-	width: 100%;
-	display: block;
-	height: auto;
-	border-radius: 10px;
-}
-
-#slideContent h2{
-	margin: 0 0.5em;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 500;
-	font-style: italic;
-	color: #0b486b;
-	border-radius: 10px;
-}
-
-#slideContent h4{
-	font-style: 'Asap', sans-serif;
-	font-size: 16px;
-	color: #001f33;
-	margin: 0 0.5em;
-	border-radius: 10px;
-}
-
-#slideContent{
-	left: 0;
-	bottom: 4.3em;
-	position: relative;
-	height: 70px;
-	background: rgba(250,250,250,0.5);
-	overflow: hidden;
-	border-radius: 10px;
-}
-
-/*------------------ Redes Sociales -----------------*/
-
-#contenedorRedesSociales{
-	width: 228px;
-	margin-top: 20px;
-	height: 860px;
-	float: right;
-	display: inline-table;
-	background: rgba(149,149,149,0.8); 
-	border-radius: 8px;
-}
-
-#contenidoFace{
-	height: 450px;
-	width: 220px;
-	position: relative;
-	margin-left: 4px;
-	margin-top: 5px;
-	background-color: white;
-	border-radius: 5px;
-}
-
-#contFace{
-	margin-left: 2px;
-	margin-top: 2px;
-	position: relative;
-}
-
-#facebook{
-	margin-top: 5px;
-}
-
-#contenidoTwit{
-	height: 350px;
-	width: 220px;
-	position: relative;
-	margin-left: 4px;
-	margin-top: 50px;
-	background-color: white;
-	border-radius: 5px;
-}
-
-#contTwit{
-	margin-left: 2px;
-	margin-top: 2px;
-	position: relative;
-}
-
-/*------------------------------------------------------------------------*/
-
-/*Bloque de noticias*/
-
-#noticias{
-	position: relative;
-	top: 20px;
-	width: 584px;
-	height: auto;
-	display: inline-table;
-}
-
-/*--------------------------------------------------------------------------*/
-
 /*Bloque de barra lateral*/
 #sidebar{
-	width: 200px;
+	width: 20%;
 	height: auto;
 	display: inline-table;
-}
-
-/*---------------------------------------------------------------------------*/
-
-/*------------------------slider de abajo------------------------------------*/
-#sliderFooter{
-	width: 1024px;
-	height: 98px;
-	position: absolute;
-	border-top: 5px solid #626364;
-	border-bottom: 5px solid #626364;
-}
-
-#banner-logo{
-	background-color: rgb(255,254,231);
-	height: 87px;
-	padding: 5px 0px;
-	position: absolute;
-	overflow: hidden;
-}
-#logos{
-	overflow: hidden;
-	position: absolute;
-}
-.logo{
-	height: 87px;
-	float: left;
-	margin-left: 10px;
-}
-#utn{
-	background: url('../img/footer-slider.png') -305px no-repeat;
-	width: 300px;
-}
-#ssich{
-	background: url('../img/footer-slider.png') -680px no-repeat;
-	width: 265px;
-}
-#polo{
-	background: url('../img/footer-slider.png') -1015px no-repeat;
-	width: 270px;
 }

@@ -1,0 +1,29 @@
+/*------------------------slider de abajo------------------------------------*/
+#banner-logo{
+	background-color: rgb(255,254,231);
+	height: 87px;
+	padding: 5px 0px;
+	position: relative;
+	overflow: hidden;
+}
+#logos{
+	overflow: hidden;
+	position: absolute;
+}
+.logo{
+	height: 87px;
+	float: left;
+	margin-left: 10px;
+}
+#utn{
+	background: url('../img/footer-slider.png') -305px no-repeat;
+	width: 300px;
+}
+#ssich{
+	background: url('../img/footer-slider.png') -680px no-repeat;
+	width: 265px;
+}
+#polo{
+	background: url('../img/footer-slider.png') -1015px no-repeat;
+	width: 270px;
+}
