@@ -29,7 +29,7 @@
 }
 
 .contenedorNoticia{
-	height: 240px;
+	height: 235px;
 	margin: 5px 0px 5px 0px;
 	background-color: rgba(0, 98, 178, 0.2);
 	border-radius: 8px;
@@ -38,24 +38,38 @@
 .contenedorTextoNoticia{
 	margin: 0px;
 	height: 150px;
-	padding: 5px;
+	padding: 15px;
 }
 
 .imgNoticia{
-	border: 1px solid black;
+	border: 5px groove #DBDBDB;
 	border-radius: 3px;
 	float: left;
-	height: 150px;
+	height: 145px;
 	margin:5px;
 }
 
+.leerMasInfo{
+	white-space: pre-line;
+	font-family: "Roboto";
+	text-decoration: none;
+	width: 80px;
+	margin-top: 5px;
+	float: right;
+	color: #548ed7;
+}
+
+.leerMasInfo:hover{
+	color: black;
+}
 
 .textTituloNoticia{
-	font-family: "Rosario";
+	font-family: "Asap";
 	color: #548ed7;
 	font-size: 20px;
 	font-weight: bolder;
 	text-decoration: none;
+	text-align: center;
 }
 
 .textoNoticia{
@@ -69,13 +83,11 @@
 
 .textTituloNoticia:hover{
 	cursor: pointer;
-	text-shadow:0.1em 0.1em 0.05em #BFC0C1;
 }
 
 .tituloNotica{
-	height: 60px;
+	height: 55px;
 	position: relative;
-	margin-top: 12px;
 	margin-left: 12px;
 }
 
@@ -87,6 +99,7 @@
 #iconoTituloInfo{
 	float: left;
 	width: 70px;
+	margin-left: 20px;
 }
 
 #textTituloInfo{
@@ -102,10 +115,10 @@
 	height: 70px;
 }
 
-#linesSeparadoraNoticiaEvento{
-	width: 70%;
-	height: 10px;
+#separadorTitulo{
+	height: 2px;
+	width: 68%;
+	border-bottom: 3px dashed #6E6E6E;
 	margin: 0px auto;
 	margin-bottom: 10px;
-	border-bottom: 5px dashed #01466F;
 }

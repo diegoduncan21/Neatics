@@ -1,39 +1,50 @@
+img{
+	border-radius: 5px;
+}
+
 #even{
 	float: left;
-	width: 72%;
+	width: 71%;
+	margin-right: 8px;
 }
 
 #contenedor {
 	width: 100%;
 	background: white;
+	margin-right: 8px;
 }
 
 #logo {
 	width: 100%;
+	margin-left: 20px;
 	background: white;
 	display:inline-block;
 }
 #eventos{
 	width: 100%;
+	height: auto;
 	display:inline-block;
-	background: #C0dcae;
 	border-radius: 5px;
 }
 
 #conevento{
-	width: 32%;
-	display:inline-block;
-	margin: 3px;
+	width: 100%;
+	margin: 5px;
+	height: 170px;
+	border-radius: 15px;
+	position: relative;
+	background: #C0dcae;
 }
 
 .imagen {
 	margin-top: 10px;
-	width: 100%;
-	height: 80px;
-	background: black;
+	margin-left: 3px;
+	width:200px ;
+	height: 120px;
 	border-radius: 5px;
-	border:dotted 1px white;
 	overflow: hidden;
+	float: left;
+	margin-right: 7px;
 }
 
 .titulo{
@@ -44,12 +55,41 @@
 	font-weight: 200;
 }
 
+.textoTitulo{
+	text-decoration: none;
+	color: #419954;
+	font-weight: bolder;
+	font-size: 17px;
+	padding-top: 15px;
+}
+
+.leerMasEve{
+	white-space: pre-line;
+	font-family: "Roboto";
+	text-decoration: none;
+	width: 80px;
+	margin-top: 5px;
+	color: #419954;
+}
+
 .texto{
-	width:100%;
+	width:95%;
 	text-align: left;
 	font-size: 12px;
+	margin:10px;
 	font-family: 'Asap', sans-serif;
 }
+
+.infoTexto{
+	padding: 5px;
+	margin-left: 5px;
+	text-align: justify;
+	text-indent: 20px;
+	white-space: pre-line;
+	font-family: "Roboto";
+	font-size: 13px;
+}
+
 .eve{
 	text-align: left;
 	font-size: 25px;
