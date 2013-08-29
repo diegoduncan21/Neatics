@@ -6,8 +6,5 @@ def footer(request):
 def barra_lateral(request):
 	return render(request, 'barra_lateral.html')
 
-def modal_logueo(request):
-	return render(request, 'modal_logueo.html')
-
 def home(request):
 	return render(request, 'home.html')
