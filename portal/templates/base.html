@@ -12,14 +12,23 @@
 
 			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 			<script src="/static/js/home-squares-animation.js"></script>
-			
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$("#menuPerfil div").mouseleave(function(){
+						$("header").css('background','#bbb');
+					});
+
+					$("#menuPerfil div").mouseenter(function(){
+						$("header").css('background','#3c8686');
+					})
+				});
+			</script>
+				
 			{% block extra_head %} {% endblock %}
 
 	</head>
 	<body>
 		
-		{% include 'body-inmediato.html' %} 
-
 		<header>
 			<div class="containerHeader">
 				<div id="squares-wrapper"></div>
@@ -31,12 +40,13 @@
 							<li><a href="#"><span id="icoUser">&nbsp;</span>Iniciar</a></li>
 						</ul>
 					</div>
+					<div id="contImgHeader">
+						<img width="360px" height="80px" src="/static/img/back-header.png">
+					</div>
 					<div id="menuPerfil">
-						<ul>
-							<li><a href="#">Empresa</a></li>
-							<li><a href="#">Desarrollador</a></li>
-							<li><a href="#">Estudiante</a></li>
-						</ul>
+						<a href="#"><div class="perfil">Empresa</div></a>
+						<a href="#"><div class="perfil perfil1">Desarrollador</div></a>
+						<a href="#"><div class="perfil">Estudiante</div></a>
 					</div>
 				</div>
 			</div>
@@ -44,32 +54,9 @@
 
 		{% include 'nav-home.html' %}
 
-		<div id="wrapper">
-			<div class="container">
-				
-				{% include 'que-buscas.html' %}
-
-				{% include 'slide-principal.html' %}
-
-				<aside id="sidebar">
-
-				</aside>
-
-				<section id="noticias">
-
-					{% include 'infos.html' %}
-
-					{% include 'eventos.html' %}
-
-				</section>
-
-			</div>
-		</div>
-
-		{% include 'redes-sociales.html' %}
-
-		{% include 'banner-logo.html' %}
+		{% block contenido %} {% endblock %}
 
 		{% include 'footer.html' %}
+		
 	</body>
 </html>

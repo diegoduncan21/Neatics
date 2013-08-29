@@ -1,1 +1,40 @@
 {% extends 'base.html' %}
+{% block contenido %}
+	<div id="wrapper">
+
+			{% include 'que-buscas.html' %}
+
+			{% include 'slider-principal.html' %}
+
+		<aside class='banners'>
+
+			{% include 'banners.html' %}
+
+		</aside>
+		<div class="container">
+
+
+			<section id="noticias">
+
+				{% include 'infos.html' %}
+
+
+			</section>
+			<section id='even'>
+
+				{% include 'eventos.html' %}
+
+			</section>
+
+			<aside id="sidebar">
+
+				{% include 'redes-sociales.html' %}
+
+			</aside>
+
+		</div>
+	</div>
+
+
+	{% include 'banner-logo.html' %}
+ {% endblock %}

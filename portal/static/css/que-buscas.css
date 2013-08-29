@@ -1,0 +1,41 @@
+/*---------------------------------------------------------------------*/
+
+/*Buscador Principal*/
+#quebuscas{
+	margin: 1% auto;
+	border-radius: 0.5em;
+	background: #8d9906;
+	width: 80%;
+	height: 70px;
+
+}
+
+#queBuscas label{
+	color: #fff;
+	margin: 0.1em 1.3em;
+	font-size: 1.5em;
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	font-weight: 300;
+}
+
+#queBuscas input{
+	font-size: 1em;
+	color: #55595c;
+	margin: 0 1.5em;
+	height: 25px;
+	border-radius: 0.4em;
+	width: 70%;
+}
+
+#contenedorLupita{
+	width: 26%;
+	height: 47px;
+	position: relative;
+	float: right;
+	top: -40px;
+}
+
+#imgLupa{
+	margin-top: 10px;
+}

@@ -4,6 +4,7 @@
 
 @media screen {
   	footer {
+  		float: left;
 		background-color: #004D83;
 		height : 10em;
 	}
@@ -84,7 +85,7 @@
 		width: 51px;
 	}
 }
-
+/*
 @media (max-width: 1024px) {
   	footer {
 		background-color: #004D83;
@@ -166,3 +167,4 @@
 		width: 51px;
 	}
 }
+*/
