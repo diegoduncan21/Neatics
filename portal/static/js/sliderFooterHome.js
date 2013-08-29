@@ -20,21 +20,4 @@ $(document).ready(function() {
 	var sentido = 1
 	animar(sentido);
 
-
-	/*Animacion en el home barrita*/
-	$(".perfil").mouseout(function(){
-		$(".secreto1").attr('class','secreto');
-	});
-
-	$(".perfil").mouseenter(function(){
-		$(".secreto").attr('class','secreto1');
-	});
-
-	$(".perfil1").mouseout(function(){
-		$(".secreto1").attr('class','secreto');
-	});
-
-	$(".perfil1").mouseenter(function(){
-		$(".secreto").attr('class','secreto1');
-	});
 })
