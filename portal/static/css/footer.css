@@ -1,12 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Asap);
-
-
 
 @media screen {
   	footer {
   		float: left;
 		background-color: #004D83;
-		height : 150px;
+		height: 150px;
+		min-width: 768px;
+		width: 100%;
 	}
 
 	.header {
@@ -14,9 +13,7 @@
 	}
 
 	#footer {
-		height: 150px;
-		min-width: 768px;
-		width: 100%;
+		
 	}
 
 	#logos_redes {
