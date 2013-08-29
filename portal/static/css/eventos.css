@@ -1,4 +1,4 @@
-img{
+#even img{
 	border-radius: 5px;
 }
 
@@ -16,7 +16,6 @@ img{
 
 #logo {
 	width: 100%;
-	margin-left: 20px;
 	background: white;
 	display:inline-block;
 }
