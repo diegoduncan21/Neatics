@@ -60,10 +60,12 @@
 	font-family: 'Roboto', sans-serif;
 	color: #419954; 
 	font-style: italic;
-	font-weight: 400;
+	font-weight:bolder;
 }
 
 .d {
 	display:inline-block;
-	vertical-align: top;	
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-weight: bolder;	
 }

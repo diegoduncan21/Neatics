@@ -22,7 +22,6 @@ body{
 }
 
 /*------------------------------------------------------*/
-
 .container{
 	float: left;
 	width: 80%;
@@ -34,8 +33,6 @@ body{
 	position: absolute;	
 	background: #01466F;
 }
-/*--------------------------------------------------------------*/
-
 /*Cabecera del sitio*/
 header{
 	height: 211px;
@@ -130,7 +127,6 @@ header{
 	border-radius: 3px;
 }
 
-
 /*Menu principal*/
 nav{
 	text-align: center;
@@ -152,8 +148,6 @@ nav ul li a{
 	color: #003d66;
 	text-decoration: none;
 }
-
-/*--------------------------------------------------------------------------*/
 
 /*Bloque de barra lateral*/
 #sidebar{
