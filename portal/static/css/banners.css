@@ -1,6 +1,7 @@
 .banners{
 	float: left;
-	width: 20%;
+	height: 700px;
+	width: 200px;
 }
 .logos_secciones {
 	height: 50%;
@@ -58,19 +59,20 @@
 	width: 70%;
 }
 
-.banners {
+.bann {
 	height: 50%;
 }
 
 .banner {
-	height: 18%;
 	margin-bottom: 4px;
 }
 
 .banner1 {
-	background: url("http://www.victoralonso.net/press2/wp-content/uploads/2010/12/banner-appstore.png");
+	height: 19%;
+	background: url("http://www.victoralonso.net/press2/wp-content/uploads/2010/12/banner-appstore.png") no-repeat;
 }
 
 .banner2 {
-	background: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHuz_xNBUcWX7Hx25y7XfzIeOardtv4F3XVUOJ6T0jGbxVQkJsgQ");
+	height: 19%;
+	background: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHuz_xNBUcWX7Hx25y7XfzIeOardtv4F3XVUOJ6T0jGbxVQkJsgQ") no-repeat;
 }
