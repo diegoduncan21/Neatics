@@ -1,4 +1,0 @@
-Neatics
-=======
-
-Portal web Neatics
