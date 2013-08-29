@@ -22,15 +22,26 @@ body{
 /*------------------------------------------------------*/
 
 /*Clase contenedor, para que el contenido se vea relativamente a 1024px */
+
+.conternedorPrincipal{
+	width: 1024px;
+	margin: 0px auto;
+}
+
 .container{
 	width: 100%;
 	margin: 0 auto;
 }
 
 .containerHeader{
-	width: 100%;
+	width: 1024px;
 	margin: 0 auto;
 	position: absolute;	
+}
+
+.containerMenuPrincipal{
+	width: 100%;
+	margin: 0 auto;
 }
 
 /*--------------------------------------------------------------*/
@@ -38,23 +49,24 @@ body{
 /*Cabecera del sitio*/
 header{
 	height: 200px;
-	width: 100%;
+	width: 1024px;
 	background: #01466F;
 } /*url("/../static/img/back-header.png") no-repeat 190px 0px*/
 
 #headerDerecho{
-	background: url("/../static/img/back-header.png") no-repeat -415px -10px;
 	float: right;
 	position: relative;
-	width: 620px;
-	height: 200px;
+	width: 420px;
+	height: 220px;
 }
+
 
 #barraHeader{
 	color: #fff;
 	border-radius: 0 0 5px 15px;
 	float: right;
-	width: 40%;
+	width: 200px;
+	height: 35px;
 	background: #3c8686;
 	position: relative;
 	text-align: center;
@@ -66,7 +78,7 @@ header{
 }
 
 #barraHeader ul li a{
-	font-size: 1.2em;
+	font-size: 16px;
 	text-decoration: none;
 	color: #fff;
 	font-family: 'Rosario', sans-serif;
@@ -88,19 +100,23 @@ header{
 	background: url(../img/sprites.png) 90px -22px;
 }
 
+#contImgHeader{
+	margin-left: 60px;
+	margin-top: 83px;
+}
+
 
 #menuPerfil{
 	position: relative;
 	width: 400px;
-	top: 56.8%;
 	float: right;
-	height: 40px;
-	background: #cccccc;
+	height: 32px;
+	background: #bbb;
 	border-radius: 5px 5px 0 0;
 	text-align: center; 
 }
 
-#menuPerfil ul li{
+/*#menuPerfil ul li{
 	display: inline-block;
 	margin: 7px;
 }
@@ -113,25 +129,75 @@ header{
 	font-size: 20px;
 	font-weight: bold;
 }
+*/
+.perfil{
+	width: 30%;
+	height: 100%;
+	float: left;
+	padding-top: 6px;
+	color: #0b486b;
+	font-family: 'Rosario',sans-serif;
+	font-style: italic;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.perfil1{
+	width: 40%;
+	height: 100%;
+	float: left;
+	padding-top: 6px;
+	text-decoration: none;
+	color: #0b486b;
+	font-family: 'Rosario',sans-serif;
+	font-style: italic;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.perfil:hover{
+	background-color: #3c8686;
+	color: white;
+	border-radius: 3px;
+}
+
+.perfil1:hover{
+	background-color: #3c8686;
+	color: white;
+}
 
 /*---------------------------------------------------------------*/
+
+.secreto{
+	width: 100%;
+	height: 6px;
+	background-color: #bbb;
+}
+
+.secreto1{
+	width: 100%;
+	height: 6px;
+	background-color: #3c8686;
+}
 
 /*Menu principal*/
 nav{
 	text-align: center;
 	width: 100%;
-	height: 5em;
-	background: #cccccc;
+	height: 35px;
+	background: #ccc;
 }
 
 nav ul li{
 	display: inline-block;
-	margin: 0.5em 0.5em;
+	margin: 1.5px 1.5px;
+	margin-top: 8px;
 }
 
 nav ul li a{
 	font-weight: bold;
-	font-size: 0.9em;
+	font-size: 1em;
 	font-family: 'Roboto', sans-serif;
 	color: #003d66;
 	text-decoration: none;
@@ -141,7 +207,7 @@ nav ul li a{
 
 /*Buscador Principal*/
 #quebuscas{
-	margin: 2% auto;
+	margin: 1% auto;
 	border-radius: 0.5em;
 	background: #8d9906;
 	width: 80%;
@@ -167,6 +233,18 @@ nav ul li a{
 	width: 70%;
 }
 
+#contenedorLupita{
+	width: 26%;
+	height: 47px;
+	position: relative;
+	float: right;
+	top: -40px;
+}
+
+#imgLupa{
+	margin-top: 10px;
+}
+
 /*------------------------------------------------------------------------*/
 
 /*Slider Principal del Sitio*/
@@ -175,12 +253,15 @@ nav ul li a{
 	display: block;
 	width: 100%;
 	height: 360px;
+	border-radius: 10px;
+	margin-bottom: 10px;
 }
 
 #sliderPrincipal img{
 	width: 100%;
 	display: block;
 	height: auto;
+	border-radius: 10px;
 }
 
 #slideContent h2{
@@ -189,6 +270,7 @@ nav ul li a{
 	font-weight: 500;
 	font-style: italic;
 	color: #0b486b;
+	border-radius: 10px;
 }
 
 #slideContent h4{
@@ -196,6 +278,7 @@ nav ul li a{
 	font-size: 16px;
 	color: #001f33;
 	margin: 0 0.5em;
+	border-radius: 10px;
 }
 
 #slideContent{
@@ -205,94 +288,65 @@ nav ul li a{
 	height: 70px;
 	background: rgba(250,250,250,0.5);
 	overflow: hidden;
+	border-radius: 10px;
 }
+
+/*------------------ Redes Sociales -----------------*/
 
 #contenedorRedesSociales{
-	height:450px;
-	margin-top: 8px;
-	margin-bottom: 8px;
-	width: 100%;
-}
-
-#contenedorPrincipalfacebook{
-	width: 320px;
+	width: 228px;
+	margin-top: 20px;
+	height: 860px;
 	float: right;
-	margin: 0px auto;
-	border: 5px solid #0F14AE;
-	border-radius: 5px;
-	height: 435px;
-}
-
-#imgFace{
-	background: url("/static/img/sprites.png") -165px -60px;
-	width: 51px;
-	height: 55px;
-	float: left;
-	margin-left: 15px;
-}
-
-#tituloFace{
-	height: 60px;
-	background-color: #0F14AE;
-}
-
-#textFaceTitulo{
-	color: white;
-	padding-top: 12px;
-	padding-bottom: -12px;
-	margin-bottom: -12px;
+	display: inline-table;
+	background: rgba(149,149,149,0.8); 
+	border-radius: 8px;
 }
 
 #contenidoFace{
-	padding:10px;
-}
-
-.contenedorFace{
-	width: 45%;
-	float: left;
+	height: 450px;
+	width: 220px;
 	position: relative;
-	margin-right: 50px;
-}
-
-.contenedorTwit{
-	width: 45%;
-	float: left;
-	position: relative;
-}
-
-#contenedorPrincipalTwit{
-	width: 320px;
-	margin: 0px auto;
-	border: 5px solid #5794F7;
+	margin-left: 4px;
+	margin-top: 5px;
+	background-color: white;
 	border-radius: 5px;
-	height: 435px;
 }
 
-#tituloTwit{
-	height: 60px;
-	background-color: #5794F7;
+#contFace{
+	margin-left: 2px;
+	margin-top: 2px;
+	position: relative;
 }
 
-#imgTwit{
-	background: url("/static/img/sprites.png") -114px -60px;
-	width: 51px;
-	height: 55px;
-	float: left;
-	margin-left: 15px;
+#facebook{
+	margin-top: 5px;
 }
 
-#textTwitTitulo{
-	color: white;
-	padding-top: 12px;
-	padding-bottom: -12px;
-	margin-bottom: -12px;
+#contenidoTwit{
+	height: 350px;
+	width: 220px;
+	position: relative;
+	margin-left: 4px;
+	margin-top: 50px;
+	background-color: white;
+	border-radius: 5px;
+}
+
+#contTwit{
+	margin-left: 2px;
+	margin-top: 2px;
+	position: relative;
 }
 
 /*------------------------------------------------------------------------*/
 
 /*Bloque de noticias*/
+
 #noticias{
-	width: 69.7%;
+	position: relative;
+	top: 20px;
+	width: 584px;
 	height: auto;
 	display: inline-table;
 }
@@ -301,7 +355,7 @@ nav ul li a{
 
 /*Bloque de barra lateral*/
 #sidebar{
-	width: 30%;
+	width: 200px;
 	height: auto;
 	display: inline-table;
 }
@@ -309,6 +363,14 @@ nav ul li a{
 /*---------------------------------------------------------------------------*/
 
 /*------------------------slider de abajo------------------------------------*/
+#sliderFooter{
+	width: 1024px;
+	height: 98px;
+	position: absolute;
+	border-top: 5px solid #626364;
+	border-bottom: 5px solid #626364;
+}
+
 #banner-logo{
 	background-color: rgb(255,254,231);
 	height: 87px;
