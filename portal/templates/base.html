@@ -20,8 +20,42 @@
 					$("#menuPerfil div").mouseenter(function(){
 						$("header").css('background','#3c8686');
 					})
+					$('#singin').click(function() {
+						$('#barraHeader').animate({top:'+=173px'})
+						$('#singin').animate({top:'-=20px'})
+						$('#idioma').animate({top:'-=173px'})
+						$('#singin').unbind("click").click(function() {
+							var user = $('#user').val();
+							var pass = $('#pass').val();
+							// $.get();
+							console.log(user, pass)
+						})
+					})
+					$('#close').click(function() {
+						$('#barraHeader').animate({top:'-=173px'})
+						$('#singin').animate({top:'+=20px'})
+						$('#idioma').animate({top:'+=173px'})
+						$('#user').val('');
+						$('#pass').val('');
+						$('#singin').unbind("click").click(function() {
+						$('#barraHeader').animate({top:'+=173px'})
+						$('#singin').animate({top:'-=20px'})
+						$('#idioma').animate({top:'-=173px'})
+						$('#singin').unbind("click").click(function() {
+							var user = $('#user').val();
+							var pass = $('#pass').val();
+							// $.get();
+							console.log(user, pass)
+						})
+					})
+					})
 				});
 			</script>
+
+			<link rel="stylesheet" type="text/css" href="/static/css/banner-logo.css">
+			<script src="/static/js/bootstrap.js"></script>
+			<script src="/static/js/sliderFooterHome.js"></script>
+
 				
 			{% block extra_head %} {% endblock %}
 
@@ -33,14 +67,23 @@
 				<div id="squares-wrapper"></div>
 				<div id="headerDerecho">	
 					<div id="barraHeader">
+						<span id='close'>X</span>
+						<form>
+							<div class='control-group'>
+								<label for='user'>User: </label>
+								<input id='user' type='text' name='user'>
+							</div>
+							<div class='control-group'>
+								<input id='pass' type='password' name='pass'>
+								<label for='pass'>Password: </label>
+							</div>
+						</form>
 						<ul>
-							<li><a href="#"><span id="icoLenguaje">&nbsp;</span>Idiomas</a></li>
-							|
-							<li><a href="#"><span id="icoUser">&nbsp;</span>Iniciar</a></li>
+							<li id='idioma'><a href="#"><span id="icoLenguaje">&nbsp;</span>Idiomas</a></li>
+							<li id='singin'><a href="#"><span id="icoUser">&nbsp;</span>Iniciar</a></li>
 						</ul>
 					</div>
 					<div id="contImgHeader">
-						<img width="360px" height="80px" src="/static/img/back-header.png">
 					</div>
 					<div id="menuPerfil">
 						<a href="#"><div class="perfil">Empresa</div></a>
