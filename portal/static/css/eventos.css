@@ -14,11 +14,20 @@
 	margin-right: 8px;
 }
 
+#contVerMasEventos{
+	width: 100%;
+	background: #C0dcae;
+	border-radius: 5px;
+	text-align: center;
+	margin-left: 5px;
+}
+
 #logo {
 	width: 100%;
 	background: white;
 	display:inline-block;
 }
+
 #eventos{
 	width: 100%;
 	height: auto;
@@ -33,6 +42,18 @@
 	border-radius: 15px;
 	position: relative;
 	background: #C0dcae;
+}
+
+#verMasEventos{
+	text-decoration: none;
+	color: #419954;
+	font-weight: bolder;
+	font-size: 17px;
+	padding-top: 15px;
+}
+
+#verMasEventos:hover{
+	color:#6AB278;
 }
 
 .imagen {
