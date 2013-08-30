@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+	<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+			<title>NeaTics.com.ar</title>
+
+			<link rel="stylesheet" href="/static/css/home-squares-animation.css">
+			<link rel="stylesheet" href="/static/css/index.css">
+
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+			<script src="/static/js/home-squares-animation.js"></script>
+			<link rel="stylesheet" href="/static/css/footer.css">
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$("#menuPerfil div").mouseleave(function(){
+						$("header").css('background','#bbb');
+					});
+
+					$("#menuPerfil div").mouseenter(function(){
+						$("header").css('background','#3c8686');
+					})
+				});
+			</script>
+				
+			{% block extra_head %} {% endblock %}
+
+	</head>
+	<body>
+		
+		<header>
+			<div class="containerHeader">
+				<div id="squares-wrapper"></div>
+				<div id="headerDerecho">	
+					<div id="barraHeader">
+						<ul>
+							<li><a href="#"><span id="icoLenguaje">&nbsp;</span>Idiomas</a></li>
+							|
+							<li><a href="#"><span id="icoUser">&nbsp;</span>Iniciar</a></li>
+						</ul>
+					</div>
+					<div id="contImgHeader">
+						<img width="360px" height="80px" src="/static/img/back-header.png">
+					</div>
+					<div id="menuPerfil">
+						<a href="#"><div class="perfil">Empresa</div></a>
+						<a href="#"><div class="perfil perfil1">Desarrollador</div></a>
+						<a href="#"><div class="perfil">Estudiante</div></a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		{% include 'nav-home.html' %}
+
+		{% block contenido %} {% endblock %}
+
+		<footer>
+
+			{% include 'footer.html' %}
+
+		</footer>
+		
+	</body>
+</html>

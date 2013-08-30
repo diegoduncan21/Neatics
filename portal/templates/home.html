@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block extra_head %}
+	<link rel="stylesheet" type="text/css" href="/static/css/que-buscas.css">
+	<link rel="stylesheet" href="/static/css/bootstrap.css">
+	<link rel="stylesheet" href="/static/css/carousel.css">
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#myCarousel').carousel()
+		})
+	</script>
+	<link rel="stylesheet" type="text/css" href="/static/css/banners.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/infomacionHome.css">
+	<link rel="stylesheet" href="/static/css/eventos.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/redes-sociales.css">
+
+{% endblock %}
+
+{% block contenido %}
+	<div id="wrapper">
+
+			{% include 'que-buscas.html' %}
+
+			{% include 'slider-principal.html' %}
+
+		<aside class='banners'>
+
+			{% include 'banners.html' %}
+
+		</aside>
+		<div class="container">
+
+
+			<section id="noticias">
+
+				{% include 'infos.html' %}
+
+
+			</section>
+			<section id='even'>
+
+				{% include 'eventos.html' %}
+
+			</section>
+
+			<aside id="sidebar">
+
+				{% include 'redes-sociales.html' %}
+
+			</aside>
+
+		</div>
+	</div>
+
+
+	{% include 'banner-logo.html' %}
+ {% endblock %}

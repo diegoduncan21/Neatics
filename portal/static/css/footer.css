@@ -1,25 +1,19 @@
-@import url(http://fonts.googleapis.com/css?family=Asap);
-
-
 
 @media screen {
   	footer {
+  		float: left;
 		background-color: #004D83;
-		height : 10em;
+		height: 150px;
+		min-width: 768px;
+		width: 100%;
 	}
 
 	.header {
 		margin-left: -35px;
 	}
 
-	#footer {
-		height: 100%;
-		min-width: 768px;
-		width: 100%;
-	}
-
 	#logos_redes {
-		float: left;
+		float: right;
 		height: 100%;
 		min-width: 33%;
 	}
@@ -84,7 +78,7 @@
 		width: 51px;
 	}
 }
-
+/*
 @media (max-width: 1024px) {
   	footer {
 		background-color: #004D83;
@@ -166,3 +160,4 @@
 		width: 51px;
 	}
 }
+*/
