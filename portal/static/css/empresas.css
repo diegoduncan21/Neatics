@@ -1,0 +1,18 @@
+#contenedor-empresa {
+	color:red;
+}
+
+
+#header-empresa {
+	height:230px;
+	display:table-cell;
+	vertical-align:middle;
+	width:1024px; /* Mejorar esto despues */
+}
+
+
+#nombre-empresa,
+#slogan-empresa {
+	width:100%;
+	text-align:center;
+}
