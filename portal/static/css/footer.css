@@ -51,16 +51,19 @@
 	#contactosFooter{
 		width: 100%;
 		height: 100px;
+		background: rgba(225,225,225,0.2);
+		border-radius: 8px;
 	}
 
 	.desarrolladoPorFooter{
 		width: 100%;
 		height: 47px;
-		border-top: 3px solid #858484;
+		background: rgba(225,225,225,0.2);
+		border-radius: 8px;
 	}
 
 	.desarrolladoPorFooter div{
-		color: #858484;
+		color: black;
 		text-align: center;
 		font-family: Asap;
 		font-size: 18px;
@@ -109,16 +112,14 @@
 
 	.contactosFooterDer a{
 		text-decoration: none;
-		color: white;
-		width: 324px;
+		color: black;
 		font-family: Asap;
 		font-size: 20px;
 	}
 
 	.contactosFooterIzq a{
 		text-decoration: none;
-		color: white;
-		width: 324px;
+		color: black;
 		font-family: Asap;
 		font-size: 20px;
 	}
