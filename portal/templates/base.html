@@ -32,7 +32,7 @@
 						$('#signin').unbind("click").click(function() {
 							var user = $('#user').val();
 							var pass = $('#pass').val();
-							$.post('/users/login',{user:user, pass: pass},function(data) {
+							$.post('/users/login/',{user:user, pass: pass},function(data) {
 								if (data.errors){
 									// mostrar error
 								}else{
@@ -65,9 +65,9 @@
 							var user = $('#userLog').val();
 							var pass = $('#passLog').val();
 							var email = $('#emailLog').val();
-							$.post("user/singup",{user:user,pass:pass,email:email},function(data) {
+							$.post("user/singup/",{user:user,pass:pass,email:email},function(data) {
 								if (data.errors) {
-									
+
 								}else{
 									$('#signin').empty().html("<span id='icoUser'>&nbsp;</span>"+data.user)
 								}
