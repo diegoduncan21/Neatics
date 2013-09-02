@@ -1,66 +1,182 @@
 .banners{
 	float: left;
-	height: 700px;
+	height: 1000px;
 	width: 200px;
+	background-color: rgba(225,225,225,0.5);
+	border-radius: 5px;
+
 }
 .logos_secciones {
-	height: 70%;
+	height: 67%;
+	margin-top: 5px;
 }
 
 .logo_seccion {
+	color: #0269B6;
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
-	height: 15%;
-	margin: 10px;
+	height: 60px;
+	border: 3px solid #0269B6;
+	background-color: black;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 5px;
+	position: relative;
+}
+
+.seccionActivado{
+	color: #548ed7;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	height: 60px;
+	border: 3px solid #548ed7;
+	background-color: #242424;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 5px;
+	position: relative;
+	cursor: pointer;
+}
+
+.logo_seccion:hover{
+	background-color: #242424;
+	color: #548ed7;
+	border: 3px solid #548ed7;
+	cursor: pointer; 
 }
 
 .logo_informatorio {
 	background: url("/static/img/informatorio_50x52.png");
 	float: left;
+	margin-top: 2px;
 	height: 52px;
-	width: 50px;
+	width: 47px;
 }
 
-.informatorio {
-	color: #0269B6;
+.subMenu_informatorio{
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	height: 40px;
+	border: 3px solid black;
+	background-color: #65A5CC;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 5px;
+	position: relative;	
+	text-align: center;
+	display: none;
+}
+
+.subMenu_informatorio:hover{
+	background-color: #286784;
+	cursor: pointer;
+}
+
+.subMenu_polo, .subMenu_empresas{
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	height: 40px;
+	border: 3px solid black;
+	background-color: #65A5CC;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 5px;
+	position: relative;	
+	text-align: center;
+	display: none;
+}
+
+.subMenu_empresas:hover{
+	background-color: #286784;
+	cursor: pointer;
+}
+
+.subMenu_polo:hover{
+	background-color: #286784;
+	cursor: pointer;
+}
+
+.subMenu_empleos{
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	height: 40px;
+	border: 3px solid black;
+	background-color: #65A5CC;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 5px;
+	position: relative;	
+	text-align: center;
+	display: none;
+}
+
+.subMenu_empleos:hover{
+	background-color: #286784;
+	cursor: pointer;
+}
+
+.subMenu_estudiar{
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	height: 40px;
+	border: 3px solid black;
+	background-color: #65A5CC;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 5px;
+	position: relative;	
+	text-align: center;
+	display: none;
+}
+
+.subMenu_estudiar:hover{
+	background-color: #286784;
+	cursor: pointer;
+}
+
+.textGrandesSubmenu{
+	font-size: 18px;
+	margin-top:10px;
+}
+
+.textMuyGrandeSubMenu{
+	font-size: 18px;
+	margin-top:-2px;
+}
+
+.textSubmenu{
+	margin-top: 8px;
+}
+
+.titulo_seccion{
 	float: right;
-	height: 100%;
-	margin-top: 15px;
-	width: 70%;
+	height: 50%;
+	margin-top: 18px;
+	width: 133px;
 }
 
 .logo_poloit {
 	background: url("/static/img/poloit_50x52.png");
 	float: left;
+	margin-top: 2px;
 	height: 52px;
-	width: 50px;
-}
-
-.poloit {
-	color: #0269B6;
-	float: right;
-	height: 100%;
-	margin-top: 12px;
-	width: 70%;
+	width: 47px;
 }
 
 .logo_empleostics {
 	background: url("/static/img/empleos_50x52.png");
 	float: left;
-	height: 52px;
-	width: 50px;
-}
-
-.empleostics {
-	color: #0269B6;
-	float: right;
-	height: 100%;
 	margin-top: 2px;
-	width: 70%;
+	height: 52px;
+	width: 47px;
 }
 
 .bann {
-	height: 50%;
+	height: 30%;
 }
 
 .banner {

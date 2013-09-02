@@ -6,14 +6,109 @@
 	<link rel="stylesheet" href="/static/css/carousel.css">
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$('#myCarousel').carousel()
+			$('#myCarousel').carousel();
+			
+			$("#seccionInformatorio").click(function() {
+		      	$("#seccionInformatorio").attr('class','seccionActivado');
+		      	$("#seccionPolo").attr('class','logo_seccion');
+		      	$("#seccionEmpresas").attr('class','logo_seccion');
+		      	$("#seccionEmpleos").attr('class','logo_seccion');
+		      	$("#seccionEstudiar").attr('class','logo_seccion');
+				
+		      	$(".subMenu_empresas").slideUp(800,function(){
+		      	});
+		      	$(".subMenu_polo").slideUp(800,function(){
+		      	});
+		      	$(".subMenu_empleos").slideUp(800,function(){
+		      	});
+		      	$(".subMenu_estudiar").slideUp(800,function(){
+		      	});
+		      	$(".subMenu_informatorio").slideDown(800,function(){
+		      	});
+			})
+
+			$("#seccionPolo").click(function() {
+		      	$("#seccionInformatorio").attr('class','logo_seccion');
+		      	$("#seccionPolo").attr('class','seccionActivado');
+		      	$("#seccionEmpresas").attr('class','logo_seccion');
+		      	$("#seccionEmpleos").attr('class','logo_seccion');
+		      	$("#seccionEstudiar").attr('class','logo_seccion');
+				
+		      	$(".subMenu_empresas").slideUp(800,function(){
+		      	});
+		      	$(".subMenu_polo").slideDown(800,function(){
+		      	});
+		      	$(".subMenu_empleos").slideUp(800,function(){
+		      	});
+		      	$(".subMenu_estudiar").slideUp(800,function(){
+		      	});
+		      	$(".subMenu_informatorio").slideUp(800,function(){
+		      	});
+			})			
+
+			$("#seccionEmpresas").click(function() {
+		      	$("#seccionInformatorio").attr('class','logo_seccion');
+		      	$("#seccionPolo").attr('class','logo_seccion');
+		      	$("#seccionEmpresas").attr('class','seccionActivado');
+		      	$("#seccionEmpleos").attr('class','logo_seccion');
+		      	$("#seccionEstudiar").attr('class','logo_seccion');
+				
+		      	$(".subMenu_empresas").slideDown(800,function(){
+		      	});
+		      	$(".subMenu_polo").slideUp(800,function(){
+		      	});
+		      	$(".subMenu_empleos").slideUp(800,function(){
+		      	});
+		      	$(".subMenu_estudiar").slideUp(800,function(){
+		      	});
+		      	$(".subMenu_informatorio").slideUp(800,function(){
+		      	});
+			})
+
+			$("#seccionEmpleos").click(function() {
+		      	$("#seccionInformatorio").attr('class','logo_seccion');
+		      	$("#seccionPolo").attr('class','logo_seccion');
+		      	$("#seccionEmpresas").attr('class','logo_seccion');
+		      	$("#seccionEmpleos").attr('class','seccionActivado');
+		      	$("#seccionEstudiar").attr('class','logo_seccion');
+				
+		      	$(".subMenu_empresas").slideUp(800,function(){
+		      	});
+		      	$(".subMenu_polo").slideUp(800,function(){
+		      	});
+		      	$(".subMenu_empleos").slideDown(800,function(){
+		      	});
+		      	$(".subMenu_estudiar").slideUp(800,function(){
+		      	});
+		      	$(".subMenu_informatorio").slideUp(800,function(){
+		      	});
+			})
+
+			$("#seccionEstudiar").click(function() {
+		      	$("#seccionInformatorio").attr('class','logo_seccion');
+		      	$("#seccionPolo").attr('class','logo_seccion');
+		      	$("#seccionEmpresas").attr('class','logo_seccion');
+		      	$("#seccionEmpleos").attr('class','logo_seccion');
+		      	$("#seccionEstudiar").attr('class','seccionActivado');
+				
+		      	$(".subMenu_empresas").slideUp(800,function(){
+		      	});
+		      	$(".subMenu_polo").slideUp(800,function(){
+		      	});
+		      	$(".subMenu_empleos").slideUp(800,function(){
+		      	});
+		      	$(".subMenu_estudiar").slideDown(800,function(){
+		      	});
+		      	$(".subMenu_informatorio").slideUp(800,function(){
+		      	});
+			})
 		})
 	</script>
 	<link rel="stylesheet" type="text/css" href="/static/css/banners.css">
 	<link rel="stylesheet" type="text/css" href="/static/css/infomacionHome.css">
 	<link rel="stylesheet" href="/static/css/eventos.css">
 	<link rel="stylesheet" type="text/css" href="/static/css/redes-sociales.css">
-
+	<!--<script src="../static/js/banners.js"></script>-->
 {% endblock %}
 
 {% block contenido %}
