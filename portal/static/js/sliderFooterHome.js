@@ -18,5 +18,6 @@ $(document).ready(function() {
 	})
 	$('#logos').css('width',largo);
 	var sentido = 1
-	animar(sentido)
+	animar(sentido);
+
 })

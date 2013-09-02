@@ -1,25 +1,24 @@
+{# <link rel="stylesheet" type="text/css" href="/static/css/redes-sociales.css"> #}
+
 <div id="contenedorRedesSociales">
-	<div class="contenedorFace">
-		<div id="contenedorPrincipalfacebook">
-			<div id="tituloFace">
-				<div id="imgFace"></div>
-				<h2 id="textFaceTitulo">Facebook</h2>
-			</div>
-			<div id="contenidoFace">
-				<div class="fb-like-box" data-href="https://www.facebook.com/NeaTics" data-width="300" data-height="350" data-show-faces="false" data-header="true" data-stream="true" data-show-border="true"></div>
-			</div>
+	<div id="contenidoFace">
+		<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=169233136600400";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+			</script>
+		<div id="contFace">
+			<div id="facebook" class="fb-like-box" data-href="https://www.facebook.com/NeaTics" data-width="215" data-height="440" data-show-faces="false" data-header="true" data-stream="true" data-show-border="true"></div>
 		</div>
 	</div>
-	<div class="contenedorTwit">
-		<div id="contenedorPrincipalTwit">
-			<div id="tituloTwit">
-				<div id="imgTwit"></div>
-				<h2 id="textTwitTitulo">Twitter</h2>
-			</div>
-			<div id="contenidoTwit">
-				<a class="twitter-timeline" href="https://twitter.com/NeaTics" data-widget-id="372507532889038848">Tweets por @NeaTics</a>
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-			</div>
+	<div id="contenidoTwit">
+		<div id="contTwit">
+			<a class="twitter-timeline" href="https://twitter.com/NeaTics" data-widget-id="372507532889038848">Tweets por @NeaTics</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 		</div>
 	</div>
 </div>

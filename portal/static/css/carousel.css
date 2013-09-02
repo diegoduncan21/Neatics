@@ -1,3 +1,14 @@
+.carousel-indicators{
+	top:20px;
+}
+#myCarousel img{
+	border-radius: 8px;
+}
+#myCarousel{
+	height: 360px;
+	margin-top: 40px;
+	top: -20px;
+}
 .carousel-inner{
 	background-color: rgb(255,254,231);
 }

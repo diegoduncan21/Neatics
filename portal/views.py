@@ -8,3 +8,7 @@ def barra_lateral(request):
 
 def home(request):
 	return render(request, 'home.html')
+	
+
+def template(request, template_name):
+	return render(request,template_name+".html")
