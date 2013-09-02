@@ -1,2 +1,18 @@
 {% extends 'base.html' %}
 
+{% block extra_head %}
+	<link rel="stylesheet" type="text/css" href="/static/css/banners.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/homeInformatorio.css">
+	<style type="text/css">
+		#barritaIndicadora{
+			width: 0px;
+			left: 0px;
+		}
+	</style>
+{% endblock %}
+
+{% block contenido %}
+	<aside class='banners'>
+		{% include 'banners.html' %}
+	</aside>
+{% endblock %}
