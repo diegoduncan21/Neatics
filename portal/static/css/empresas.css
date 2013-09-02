@@ -1,7 +1,46 @@
+.empresa-social {
+	height: 75px;
+}
+
+.tab-body-left {
+	width: 350px;
+	display: inline-block;
+}
+
+.tab-body-left > div {
+	width:315px;
+	border:solid 1px;
+	margin:10px;
+}
+
+.tab-body-right {
+	width: 650px;
+	display: inline-block;
+}
+
+.tab-content-header {
+	height: 130px;
+	border-bottom: solid 2px #C0BFC4;
+}
+
+.tab-empresas {
+	background: #C0BFC4;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	color: #019AD4;
+	display: table-cell;
+	font-size:20px;
+	height:42px;
+	margin: 2px;
+	text-align: center;
+	vertical-align: middle;
+	width: 100px;
+}
+
+
 #contenedor-empresa {
 	color:red;
 }
-
 
 #header-empresa {
 	height:230px;
@@ -11,8 +50,34 @@
 }
 
 
+#mapa-empresa {
+	height:215px;
+}
+
+
+
+
 #nombre-empresa,
 #slogan-empresa {
 	width:100%;
 	text-align:center;
+}
+
+
+#tab-content-empresas {
+	border: solid 2px #C0BFC4;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+#tabs-empresas {
+	clear: both;
+	height: 42px;
+	padding-right: 40px;
+	text-align: -webkit-right;
+}
+
+#tabs-empresas > div {
+	display: inline-block;
+	margin:1px;
 }
