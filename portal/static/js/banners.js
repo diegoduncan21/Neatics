@@ -1,4 +1,4 @@
-/*$(document).ready(function() {
+$(document).ready(function() {
 
 	$("#seccionInformatorio").click(function() {
       	$("#seccionInformatorio").attr('class','seccionActivado');
@@ -84,4 +84,4 @@
       	$(".subMenu_informatorio").slideUp(800,function(){
       	});
 	})
-})*/
+})
