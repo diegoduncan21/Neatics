@@ -42,9 +42,12 @@
 									if (data.errors){
 										// mostrar error
 									}else{
-										$('#signin').empty().html("<span id='icoUser'>&nbsp;</span>"+data.user)
+										$('#signin').empty().unbind("click").html("<span id='icoUser'>&nbsp;</span>"+data.user+"<a href={% url 'logout' %} class=\"logueado navbar-link\">(Salir)</a>")
+										$('#barraHeader').animate({top:'-=173px'})
+										$('#signin').animate({top:'+=20px'})
+										$('#idioma').animate({top:'+=173px'})
+
 									}
-									// cerrar div de logueo,
 							}, "json")
 						})
 					};
@@ -61,7 +64,9 @@
 						$('#forget').show()
 						$('#signin a').html("<span id='icoUser'>&nbsp;</span>Iniciar")
 					})
-					bindear()
+					{% if not user.is_authenticated %}
+						bindear()
+					{% endif %}
 					$('#registro').click(function() {
 						$('#logIn').hide()
 						$('#signUp').show()
@@ -145,7 +150,7 @@
 								<a href="#">
 									<span id="icoUser">&nbsp;</span>
 									{% if user.is_authenticated %}
-						                {{ user }}<a href="{% url 'logout' %}" class="navbar-link">(Salir)</a>
+						                {{ user }}<a href="{% url 'logout' %}" class="logueado navbar-link">(Salir)</a>
 						            {% else %}
 										Iniciar
 						            {% endif %}
