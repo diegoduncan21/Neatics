@@ -18,12 +18,12 @@ def custom_login(request):
 		return login(request)
 
 def login(request):
-
-	user = authenticate(username=request.POST['user'], password=request.POST['pass'])
-	if user is not None:
-		# mandar user
-	else:
-	    # mandar errores
+	pass
+	# user = authenticate(username=request.POST['user'], password=request.POST['pass'])
+	# if user is not None:
+	# 	# mandar user
+	# else:
+	#     # mandar errores
 
 
 def logout(request):
