@@ -8,7 +8,8 @@ from django.contrib.auth.views import login
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render
-from django.contrib.auth import authenticate
+from django.contrib.auth import authenticate, login as login_auth
+from django.utils import simplejson
 
 
 def custom_login(request):
@@ -18,18 +19,24 @@ def custom_login(request):
 		return login(request)
 
 def login(request):
-	pass
-	# user = authenticate(username=request.POST['user'], password=request.POST['pass'])
-	# if user is not None:
-	# 	# mandar user
-	# else:
-	#     # mandar errores
+	if request.POST['user'] and request.POST['pass']:
+		u = request.POST['user']
+		p = request.POST['pass']
+	user = authenticate(username=u, password=p)
+	data = {}
 
+	if user is not None:
+		login_auth(request, user)
+		data["user"] = user.username
+	else:
+		data["errors"] = "No existe un usuario con ese nombre."
+	
+	return HttpResponse(simplejson.dumps(data))
 
 def logout(request):
 	
 	auth_logout(request)
-	return redirect(reverse("login"))
+	return redirect(reverse("home"))
 
 
 def register(request):
