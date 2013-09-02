@@ -1,0 +1,28 @@
+{% extends "base_users.html" %}
+
+{% block title %}Create an account{% endblock %}
+
+{% block body %}
+	<section>
+		<div>
+			
+			<h1>Create an account</h1>
+	
+			<table>
+				
+				<form action="" method="post">
+					{% csrf_token %}
+					{{ form.as_table }}
+					<tr>
+						<td></td>
+						<td>
+							<input type="submit" value="Create the account">
+						</td>
+					</tr>
+				</form>
+				
+			</table>
+
+		</div>
+	</section>
+{% endblock %}
