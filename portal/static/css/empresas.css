@@ -1,21 +1,39 @@
 .empresa-social {
-	height: 75px;
+	height: 80px;
+}
+
+.empresa-social div:first-child {
+	float: left;
+	height: 80px;
+	width: 80px;
+	margin-right: 10px;
+}
+
+.empresa-social-text {
+	display: table-cell;
+	vertical-align: middle;
+	height: 80px;
 }
 
 .tab-body-left {
 	width: 350px;
 	display: inline-block;
+	vertical-align: top;
 }
 
 .tab-body-left > div {
 	width:315px;
-	border:solid 1px;
 	margin:10px;
+	color: black;
 }
 
 .tab-body-right {
 	width: 650px;
 	display: inline-block;
+}
+
+.tab-body-right p {
+	margin: 5px;
 }
 
 .tab-content-header {
@@ -39,7 +57,7 @@
 
 
 #contenedor-empresa {
-	color:red;
+
 }
 
 #header-empresa {
@@ -54,13 +72,19 @@
 	height:215px;
 }
 
+#nombre-empresa {
+	font-size: 48px;
+}
 
-
+#slogan-empresa {
+	font-size: 28px;
+}
 
 #nombre-empresa,
 #slogan-empresa {
 	width:100%;
 	text-align:center;
+	color: #178BFF;
 }
 
 
@@ -80,4 +104,21 @@
 #tabs-empresas > div {
 	display: inline-block;
 	margin:1px;
+}
+
+
+.icon-empresa-twitter {
+	background: url(/static/img/sprite-empresas.png);
+}
+
+.icon-empresa-face {
+	background: url(/static/img/sprite-empresas.png) 0px 257px;
+}
+
+.icon-empresa-mail {
+	background: url(/static/img/sprite-empresas.png) 0px 167px;
+}
+
+.icon-empresa-phone {
+	background: url(/static/img/sprite-empresas.png) 0px 79px;
 }
