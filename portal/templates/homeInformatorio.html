@@ -9,10 +9,28 @@
 			left: 0px;
 		}
 	</style>
+	<script type="text/javascript" scr="/static/js/homeInformatorio.js"></script>
 {% endblock %}
 
 {% block contenido %}
-	<aside class='banners'>
-		{% include 'banners.html' %}
-	</aside>
+	<div id="contTituloInformatorio">
+		<div id="imgMouse">
+			<img src="/static/img/raton.jpg">
+		</div>
+		<div id="tituloInformatorio">
+			<div id="informatorio">INFORMATORIO</div>
+			<div id="sloganInformatorio"><em>Hacia una mejor industria informática</em></div>
+		</div>
+	</div>
+	<div id="contInfoInformatorio">
+		<div id="mapaUbicacionInformatorio">
+			<div id="mapaInformatorio"></div>
+		</div>
+		<div id="informacionInformatorio"></div>
+	</div>
+	<div>
+		<aside class='banners'>
+			{% include 'banners.html' %}
+		</aside>
+	</div>
 {% endblock %}
