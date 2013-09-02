@@ -34,17 +34,18 @@
 							var pass = $('#pass').val();
 							$.post('/users/login/',
 								{
-									user:user, 
+									user: user, 
 									pass: pass,
 									csrfmiddlewaretoken: '{{ csrf_token }}'
 								},
 								function(data) {
-								if (data.errors){
-									// mostrar error
-								}else{
-									$('#signin').empty().html("<span id='icoUser'>&nbsp;</span>"+data.user)
-								}
-							})
+									if (data.errors){
+										// mostrar error
+									}else{
+										$('#signin').empty().html("<span id='icoUser'>&nbsp;</span>"+data.user)
+									}
+									// cerrar div de logueo,
+							}, "json")
 						})
 					};
 					$('#close').click(function() {
@@ -133,7 +134,16 @@
 							</div>
 						<ul>
 							<li id='idioma'><a href="#"><span id="icoLenguaje">&nbsp;</span>Idiomas</a></li>
-							<li id='signin'><a href="#"><span id="icoUser">&nbsp;</span>Iniciar</a></li>
+							<li id='signin'>
+								<a href="#">
+									<span id="icoUser">&nbsp;</span>
+									{% if user.is_authenticated %}
+						                {{ user }}<a href="{% url 'logout' %}" class="navbar-link">(Salir)</a>
+						            {% else %}
+										Iniciar
+						            {% endif %}
+								</a>
+							</li>
 						</ul>
 					</div>
 					<div id="contImgHeader">
