@@ -20,34 +20,53 @@
 					$("#menuPerfil div").mouseenter(function(){
 						$("header").css('background','#3c8686');
 					})
-					$('#singin').click(function() {
-						$('#barraHeader').animate({top:'+=173px'})
-						$('#singin').animate({top:'-=20px'})
-						$('#idioma').animate({top:'-=173px'})
-						$('#singin').unbind("click").click(function() {
+					var bindear = function() {
+						$('#signin').click(function() {
+							$('#barraHeader').animate({top:'+=173px'})
+							$('#signin').animate({top:'-=20px'})
+							$('#idioma').animate({top:'-=173px'})
+							logeo()
+						})
+					};
+					var logeo = function() {
+						$('#signin').unbind("click").click(function() {
 							var user = $('#user').val();
 							var pass = $('#pass').val();
-							// $.get();
-							console.log(user, pass)
+							$.post('/users/login',{user:user, pass: pass},function(data) {
+								if (data.errors){
+									// mostrar error
+								}else{
+									$('#signin').empty().html("<span id='icoUser'>&nbsp;</span>"+data.user)
+								}
+							})
 						})
-					})
+					};
 					$('#close').click(function() {
 						$('#barraHeader').animate({top:'-=173px'})
-						$('#singin').animate({top:'+=20px'})
+						$('#signin').animate({top:'+=20px'})
 						$('#idioma').animate({top:'+=173px'})
 						$('#user').val('');
 						$('#pass').val('');
-						$('#singin').unbind("click").click(function() {
-						$('#barraHeader').animate({top:'+=173px'})
-						$('#singin').animate({top:'-=20px'})
-						$('#idioma').animate({top:'-=173px'})
-						$('#singin').unbind("click").click(function() {
-							var user = $('#user').val();
-							var pass = $('#pass').val();
-							// $.get();
-							console.log(user, pass)
-						})
+						$('#signin').unbind("click").click(bindear())
+						$('#logIn').show()
+						$('#signUp').hide()
+						$('#registro').show()
+						$('#forget').show()
+						$('#signin a').html("<span id='icoUser'>&nbsp;</span>Iniciar")
 					})
+					bindear()
+					$('#registro').click(function() {
+						$('#logIn').hide()
+						$('#signUp').show()
+						$('#registro').hide()
+						$('#forget').hide()
+						$('#signin a').html("<span id='icoUser'>&nbsp;</span>Registrarse")
+						$('#signin').unbind("click").click(function() {
+							var user = $('#userLog').val();
+							var pass = $('#passLog').val();
+							var email = $('#emailLog').val();
+							
+						})
 					})
 				});
 			</script>
@@ -68,19 +87,40 @@
 				<div id="headerDerecho">	
 					<div id="barraHeader">
 						<span id='close'>X</span>
-						<form>
+						<form id='logIn'>
 							<div class='control-group'>
-								<label for='user'>User: </label>
+								<label for='user'>Usuario: </label>
 								<input id='user' type='text' name='user'>
 							</div>
 							<div class='control-group'>
 								<input id='pass' type='password' name='pass'>
-								<label for='pass'>Password: </label>
+								<label for='pass'>Contrase&ntilde;a: </label>
 							</div>
 						</form>
+						<form id='signUp'>
+							<div class='control-group'>
+								<label for='user'>Usuario: </label>
+								<input id='userLog' type='text' name='user'>
+							</div>
+							<div class='control-group'>
+								<input id='passLog' type='password' name='pass'>
+								<label for='pass'>Contrase&ntilde;a: </label>
+							</div>
+							<div class='control-group'>
+								<input id='emailLog' type='email' name='email'>
+								<label for='email'>Correo: </label>
+							</div>
+						</form>
+							<div id='registro'>
+								<h6>Registrarse</h6>
+							</div>
+							<br>
+							<div id='forget'>
+								<h6>¿Olvidaste tu contrase&ntilde;a?</h6>
+							</div>
 						<ul>
 							<li id='idioma'><a href="#"><span id="icoLenguaje">&nbsp;</span>Idiomas</a></li>
-							<li id='singin'><a href="#"><span id="icoUser">&nbsp;</span>Iniciar</a></li>
+							<li id='signin'><a href="#"><span id="icoUser">&nbsp;</span>Iniciar</a></li>
 						</ul>
 					</div>
 					<div id="contImgHeader">

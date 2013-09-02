@@ -64,21 +64,33 @@ header{
 	top: 169px;
 	left: 30px;
 }
-#singin{
+#signin{
 	position: absolute;
 	right: 50px;
 	top: 169px;
 }
 #close{
+	cursor: pointer;
 	float: right;
 	margin-top: 5px;
 	margin-right: 10px;
+}
+#registro{
+	margin-top: 115px;
+}
+#signUp{
+	display: none;
+}
+#barraHeader h6{
+	cursor: pointer;
+	margin-right: 32px;
+	float: right;
 }
 
 #barraHeader form{
 	position: absolute;
 	left: 30px;
-	top:50px;
+	top:40px;
 }
 
 .control-group{
