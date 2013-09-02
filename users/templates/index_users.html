@@ -1,0 +1,12 @@
+{% extends "base_users.html" %}
+
+{% block title %} Index {% endblock %}
+
+{% block body %}
+
+    <section>
+	<h2>Welcome, {{ user.username }}<a href="{% url 'logout' %}">(logout)</a></h2>
+	<p>This is the index page.</p>
+    </section>
+    
+{% endblock %}
