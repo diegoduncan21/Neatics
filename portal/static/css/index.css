@@ -174,15 +174,28 @@ nav{
 nav ul li{
 	display: inline-block;
 	margin: 1.5px 1.5px;
-	margin-top: 8px;
+	margin-top: 4px;
 }
 
 nav ul li a{
 	font-weight: bold;
-	font-size: 1em;
+	font-size: 18px;
 	font-family: 'Roboto', sans-serif;
 	color: #003d66;
 	text-decoration: none;
+}
+
+#contBarritaIndicadora{
+	width: 100%;
+	height: auto;
+}
+
+#barritaIndicadora{
+	height: 2px;
+	border-top: 2px solid #003d66;
+	width: 52px;
+	position: relative;
+	left: 222px;
 }
 
 /*Bloque de barra lateral*/
