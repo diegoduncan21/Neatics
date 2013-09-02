@@ -72,9 +72,16 @@
 							var user = $('#userLog').val();
 							var pass = $('#passLog').val();
 							var email = $('#emailLog').val();
-							$.post("user/singup/",{user:user,pass:pass,email:email},function(data) {
-								if (data.errors) {
-
+							$.post("/users/singup/",
+								{
+									user:user,
+									pass:pass,
+									email:email,
+									csrfmiddlewaretoken: '{{ csrf_token }}'
+								},
+								function(data) {
+								if (data.duplicated_user) {
+									// mostrar errores
 								}else{
 									$('#signin').empty().html("<span id='icoUser'>&nbsp;</span>"+data.user)
 								}

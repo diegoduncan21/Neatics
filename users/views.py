@@ -12,24 +12,19 @@ from django.contrib.auth import authenticate, login as login_auth
 from django.utils import simplejson
 
 
-def custom_login(request):
-	if request.user.is_authenticated():
-		return redirect(reverse("index"))
-	else:
-		return login(request)
-
 def login(request):
 	if request.POST['user'] and request.POST['pass']:
 		u = request.POST['user']
 		p = request.POST['pass']
-	user = authenticate(username=u, password=p)
-	data = {}
 
-	if user is not None:
-		login_auth(request, user)
-		data["user"] = user.username
-	else:
-		data["errors"] = "No existe un usuario con ese nombre."
+		user = authenticate(username=u, password=p)
+		data = {}
+
+		if user is not None:
+			login_auth(request, user)
+			data["user"] = user.username
+		else:
+			data["errors"] = "No existe un usuario con ese nombre."
 	
 	return HttpResponse(simplejson.dumps(data))
 
@@ -39,20 +34,30 @@ def logout(request):
 	return redirect(reverse("home"))
 
 
-def register(request):
+def singup(request):
 	if request.user.is_authenticated():
-		return redirect(reverse("index"))
+		return redirect(reverse("home"))
 
-	if request.method == 'POST':
-		form = UserCreationForm(request.POST)
-		if form.is_valid():
-			new_user = form.save()
-			return redirect(reverse("login"))
+	data = {}
+	username = request.POST["user"]
+	password = request.POST["pass"]
+	email = request.POST["email"]
+
+	user = User.objects.filter(username=username)
+	
+	if not user:
+		# user was created
+		# set the password here
+		u = User.objects.create(username=username, password=password, email=email)
+		u.save()
+		data["user"] = u.username
+		# login_auth(request, u)
 	else:
-		form = UserCreationForm()
-	return render(request, "registration/register.html", {
-		'form': form,
-	})
+		# user was retrieved
+		data["duplicated_user"] = True
+
+
+	return HttpResponse(simplejson.dumps(data))
 
 @login_required
 def index(request):
