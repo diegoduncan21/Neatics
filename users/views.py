@@ -10,8 +10,9 @@ from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login as login_auth
 from django.utils import simplejson
+from django.views.decorators.csrf import csrf_exempt
 
-
+@csrf_exempt
 def login(request):
 	if request.POST['user'] and request.POST['pass']:
 		u = request.POST['user']
@@ -34,6 +35,8 @@ def logout(request):
 	return redirect(reverse("home"))
 
 
+
+@csrf_exempt
 def singup(request):
 	if request.user.is_authenticated():
 		return redirect(reverse("home"))
@@ -50,8 +53,10 @@ def singup(request):
 		# set the password here
 		u = User.objects.create(username=username, password=password, email=email)
 		u.save()
+		
+		u.backend = "django.contrib.auth.backends.ModelBackend"
+		login_auth(request, u)
 		data["user"] = u.username
-		# login_auth(request, u)
 	else:
 		# user was retrieved
 		data["duplicated_user"] = True

@@ -35,8 +35,7 @@
 							$.post('/users/login/',
 								{
 									user: user, 
-									pass: pass,
-									csrfmiddlewaretoken: '{{ csrf_token }}'
+									pass: pass
 								},
 								function(data) {
 									if (data.errors){
@@ -82,15 +81,17 @@
 									user:user,
 									pass:pass,
 									email:email,
-									csrfmiddlewaretoken: '{{ csrf_token }}'
 								},
 								function(data) {
 								if (data.duplicated_user) {
 									// mostrar errores
 								}else{
-									$('#signin').empty().html("<span id='icoUser'>&nbsp;</span>"+data.user)
+									$('#signin').empty().unbind("click").html("<span id='icoUser'>&nbsp;</span>"+data.user+"<a href={% url 'logout' %} class=\"logueado navbar-link\">(Salir)</a>")
+									$('#barraHeader').animate({top:'-=173px'})
+									$('#signin').animate({top:'+=20px'})
+									$('#idioma').animate({top:'+=173px'})
 								}
-							})
+							}, "json")
 							
 						})
 					})
