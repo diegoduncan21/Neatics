@@ -1,11 +1,12 @@
 function initialize() {
-  var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
+  var myLatlng = new google.maps.LatLng(-27.453337,-58.987152);
   var mapOptions = {
-    zoom: 4,
+    zoom: 15,
     center: myLatlng,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   }
-  var map = new google.maps.Map(document.getElementById('mapaInformatorio'), mapOptions);
+  console.log("ladero");
+  var map = new google.maps.Map(document.getElementById('mapaUbicacionInformatorio'), mapOptions);
 
   var marker = new google.maps.Marker({
       position: myLatlng,
