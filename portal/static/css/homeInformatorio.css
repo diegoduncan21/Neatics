@@ -64,6 +64,26 @@
 	float: left;
 }
 
+#contIngSoft{
+	width: 580px;
+	height: 20px;
+	top: 110px;
+	left: 120px;
+	position: absolute;	
+	border-radius: 8px;
+	display: none;
+}
+
+#contGestInfor{
+	width: 580px;
+	height: auto;
+	top: 25px;
+	left: 120px;
+	position: absolute;	
+	border-radius: 8px;
+	display: none;
+}
+
 #contFundaProg{
 	width: 330px;
 	height: auto;
@@ -72,6 +92,31 @@
 	top: 150px;
 	left: -225px;
 	display: none;
+}
+
+#contModIngles{
+	width: 580px;
+	height: auto;
+	top: 610px;
+	left: 120px;
+	position: absolute;	
+	border-radius: 8px;
+	display: none;
+}
+
+#contProgAvanAplic{
+	width: 350px;
+	height: auto;
+	top: -30px;
+	left: 450px;
+	position: absolute;	
+	border-radius: 8px;
+	display: none;
+}
+
+#conProfesoresModRespInfo{
+	margin: 5px;
+	padding: 5px;
 }
 
 #fundaProg{
@@ -111,6 +156,19 @@
 	font-size: 16px;	
 }
 
+#flechGestInfor{
+	display: block;
+	margin:0 auto;
+	position: relative;
+	width:0;
+	height:0;
+	top: 300px;
+	left: -80px;
+	border-color:#515152 transparent transparent transparent;
+	border-style:solid;
+	border-width:35px;
+}
+
 #flechFundaProg{
 	display: block;
 	margin:0 auto;
@@ -122,6 +180,109 @@
 	border-color:transparent transparent transparent #515152;
 	border-style:solid;
 	border-width:20px;
+}
+
+#flechIngSoft{
+	display: block;
+	margin:0 auto;
+	position: relative;
+	width:0;
+	height:0;
+	top: 210px;
+	left: 70px;
+	border-color:#515152 transparent transparent transparent;
+	border-style:solid;
+	border-width:35px;
+}
+
+#flechModIngles{
+	display: block;
+	margin:0 auto;
+	position: relative;
+	width:0;
+	height:0;
+	top: -57px;
+	left: -2px;
+	border-color: transparent transparent #515152 transparent;
+	border-style:solid;
+	border-width:30px;
+}
+
+#flechProgAvanAplic{
+	display: block;
+	margin:0 auto;
+	position: relative;
+	width:0;
+	height:0;
+	top: 348px;
+	left: -5px;
+	border-color:#515152 transparent transparent transparent;
+	border-style:solid;
+	border-width:35px;	
+}
+
+#gestInfor{
+	border-radius: 8px;
+	width: 580px;
+	height: auto;
+	background:#515152;
+	position: absolute;
+	margin:0px auto;
+}
+
+#gestInfor h2{
+	font-family: Asap;
+	font-size: 40px;
+	text-align: left;
+	color: white;
+	border-radius: 5px;
+	margin: 4px 0px 4px 7px;
+	width: 550px;
+	padding: 5px;
+	text-decoration: underline;
+	background-color: rgba(225,225,225,0.3);
+}
+
+#gestInfor p{
+	font-family: Asap;
+	font-size: 20px;
+	color: #bbb;
+}
+
+#gestInfor p span{
+	font-weight: bolder;
+}
+
+#ingSoft{
+	border-radius: 8px;
+	width: 580px;
+	height: auto;
+	background:#515152;
+	position: absolute;
+	margin:0px auto;
+}
+
+#ingSoft h2{
+	font-family: Asap;
+	font-size: 40px;
+	text-align: left;
+	color: white;
+	border-radius: 5px;
+	margin: 4px 0px 4px 7px;
+	width: 550px;
+	padding: 5px;
+	text-decoration: underline;
+	background-color: rgba(225,225,225,0.3);
+}
+
+#ingSoft p{
+	font-family: Asap;
+	font-size: 20px;
+	color: #bbb;
+}
+
+#ingSoft p span{
+	font-weight: bolder;
 }
 
 #imgModulos1{
@@ -140,20 +301,12 @@
 	background-position: -435px 0px;
 }
 
-#imgModulo5-1{
-	position: relative;
-	top: 190px;
-	left: 80px;
+#imgModulos5{
+	position: absolute;
+	top: 546px;
+	left: 345px;
 	height: 35px;
-	width: 63px;
-}
-
-#imgModulo5-2{
-	position: relative;
-	top: 190px;
-	left: -3px;
-	height: 35px;
-	width: 58px;
+	width: 120px;
 }
 
 #imgMouse{
@@ -242,6 +395,38 @@
 	border:2px solid #bbb; 
 }
 
+#modIngles{
+	border-radius: 8px;
+	width: 580px;
+	height: auto;
+	background:#515152;
+	position: absolute;
+	margin:0px auto;
+}
+
+#modIngles h2{
+	font-family: Asap;
+	font-size: 40px;
+	text-align: left;
+	color: white;
+	border-radius: 5px;
+	margin: 4px 0px 4px 7px;
+	width: 550px;
+	padding: 5px;
+	text-decoration: underline;
+	background-color: rgba(225,225,225,0.3);
+}
+
+#modIngles p{
+	font-family: Asap;
+	font-size: 20px;
+	color: #bbb;
+}
+
+#modIngles p span{
+	font-weight: bolder;
+}
+
 #modulosRespuestasInfor h2{
 	font-family: Asap;
 	font-size: 17px;
@@ -263,6 +448,42 @@
 	background-color: #ddd;
 	position: relative;
 	height: auto;
+}
+
+#progAvanAplic{
+	border-radius: 8px;
+	width: 350px;
+	height: auto;
+	background:#515152;
+	position: absolute;
+	margin:0px auto;
+}
+
+#progAvanAplic h2{
+	font-family: Asap;
+	font-size: 17px;
+	text-align: left;
+	color: white;
+	border-radius: 5px;
+	margin: 4px 0px 4px 7px;
+	width: 320px;
+	padding: 5px;
+	text-decoration: underline;
+	background-color: rgba(225,225,225,0.3);
+}
+
+#progAvanAplic p{
+	font-family: Asap;
+	font-size: 20px;
+	color: #bbb;
+}
+
+#progAvanAplic p span{
+	font-weight: bolder;
+}
+
+#profesoresMorRespInfo{
+	
 }
 
 #respuestasInfor p{

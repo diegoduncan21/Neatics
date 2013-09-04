@@ -16,3 +16,24 @@ function initialize() {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
+$(document).ready(function(){
+  var clases = ["contMasInfoModulo1","contMasInfoModulo2","contMasInfoModulo3","contMasInfoModulo4","contMasInfoModulo5"];
+  $(".imgModulo").mouseenter(function(){
+    var id = $(this).attr('id').split('')[10];
+    id = id - 1;
+    var modulo = clases[id];
+    $("." + modulo).animate({
+      opacity: "show"
+    }, "slow")
+  })
+
+  $(".imgModulo").mouseleave(function(){
+    var id = $(this).attr('id').split('')[10];
+    id = id - 1;
+    var modulo = clases[id];
+    $("." + modulo).animate({
+      opacity: "hide"
+    }, "slow")
+  })
+})
