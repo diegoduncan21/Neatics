@@ -1,5 +1,6 @@
 $(document).ready(function() {
-	function animar (sentido) {
+	(function($) {
+	var animar =function (sentido) {
 		if (sentido==1) {
 			$('#logos').stop(true,false).animate({
 				left:(sentido*-largo)+$('#logos').parent().innerWidth()
@@ -19,5 +20,7 @@ $(document).ready(function() {
 	$('#logos').css('width',largo);
 	var sentido = 1
 	animar(sentido);
+
+	})(jQuery)
 
 })

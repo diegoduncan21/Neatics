@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block extra_head %}
+	<script>
+	$(document).ready(function() {
+		(function($) {
+			var elements = $('.feature');
+			var i = 1
+			var animar = function() {
+				if (elements.length != i) {
+					$(elements[i-1]).fadeOut(function() {
+						$(elements[i]).fadeIn();
+						i++;
+						setTimeout(animar,3000);
+					});
+				} else{
+					$(elements[i-1]).fadeOut(function() {
+						$(elements[0]).fadeIn();
+						i=1;
+						setTimeout(animar,3000);
+					});
+				};
+			};
+			$.each(elements,function() {
+				$(this).hide();
+			})
+			$(elements[0]).fadeIn();
+			setTimeout(animar,3000)
+		})(jQuery)
+	})
+		
+	</script>
+{% endblock extra_head %}
+{% block contenido %}
+	<div id="slider">
+		<div class="feature">
+			<div class="title">asdads</div>
+			<div class="content">asdasd</div>
+		</div>
+		<div class="feature">
+			<div class="title">14143</div>
+			<div class="content">12312321x</div>
+		</div>
+		<div class="feature">
+			<div class="title">:)</div>
+			<div class="content">:O</div>
+		</div>
+	</div>
+{% endblock contenido %}

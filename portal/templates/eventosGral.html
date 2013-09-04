@@ -2,16 +2,30 @@
 
 {% block extra_head %}
 	<link rel="stylesheet" type="text/css" href="/static/css/eventos.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/banners.css">
+	<script type="text/javascript" src="/static/js/banners.js"></script>
 	<style type="text/css">
 		#barritaIndicadora{
 			width: 81px;
 			left: 468px;
+		}
+		#even{
+			width: 814px;
 		}
 	</style>
 {% endblock %}
 
 {% block contenido %}
 	<div id="wrapper">
-		{% include 'eventos.html' %}
+		<aside class='banners'>
+
+			{% include 'banners.html' %}
+
+		</aside>		
+		<section id='even'>
+
+				{% include 'eventos.html' %}
+
+		</section>
 	</div>
  {% endblock %}

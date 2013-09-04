@@ -2,6 +2,8 @@
 
 {% block extra_head %}
 	<link rel="stylesheet" type="text/css" href="/static/css/infomacionHome.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/banners.css">
+	<script type="text/javascript" src="/static/js/banners.js"></script>
 	<style type="text/css">
 		#barritaIndicadora{
 			width: 78px;
@@ -12,6 +14,17 @@
 
 {% block contenido %}
 	<div id="wrapper">
-		{% include 'infos.html' %}
+		<aside class='banners'>
+
+			{% include 'banners.html' %}
+
+		</aside>
+		<div class="container">
+
+
+			<section id="noticias">
+
+				{% include 'infos.html' %}
+		</div>
 	</div>
  {% endblock %}
