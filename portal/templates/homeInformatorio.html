@@ -30,6 +30,20 @@
 		}
 
 		google.maps.event.addDomListener(window, 'load', initialize);
+
+		$(document).ready(function(){
+			$("#imgModulos1").mouseenter(function(){
+				$("#contFundaProg").animate({
+					opacity: "show"
+				}, "slow")
+			})
+
+			$("#imgModulos1").mouseleave(function(){
+				$("#contFundaProg").animate({
+					opacity: "hide"
+				}, "slow")
+			})
+		})
 	</script>
 {% endblock %}
 
@@ -123,7 +137,34 @@
 							<p>- Tecnologías Java</p>
 							<p>- Tecnologías PHP</p>
 
-							<img src="/static/img/modulo.png">
+							<div id="contImgModulosRespuestasInfor">
+								<div id="imgModulos1" class="imgModulosRespuestasInfor"></div>
+								<div id="imgModulos2" class="imgModulosRespuestasInfor">
+									<div class="imgModulo5" id="imgModulo5-1"></div>
+								</div>
+								<div id="imgModulos3" class="imgModulosRespuestasInfor">
+									<div class="imgModulo5" id="imgModulo5-2"></div>
+								</div>
+								<div id="imgModulos4" class="imgModulosRespuestasInfor"></div>
+								<div id="contFundaProg">
+									<div id="fundaProg">
+										<h2>ET1: Fundamentos de la Programación</h2>
+										<p>
+											<span>Objetivo:</span> El objetivo general de este eje temático es que los estudiantes sean capaces de resolver de manera eficaz distintos problemas de carácter general. Este objetivo requiere que los alumnos adquieran el conocimiento teórico y práctico sobre las técnicas básicas de programación estructurada consiguiendo la obtención de ideas <em>intuitivas y claras de los conceptos y técnicas estudiados,</em> y permitirá entender fácilmente nuevos modelos facilitando la aplicación práctica de los algoritmos utilizando un lenguaje de programación de propósito general.
+										</p>
+										<p>
+											<span>Contenidos Mínimos:</span> Concepto de Informática, Computadora, Hardware y Software. Algoritmia, Algoritmo, resolución de problemas con algoritmos. Constantes, Variables, Estructuras de Datos: arreglos, listas, pilas, colas, arboles. Estructuras de control.
+										</p>
+										<p>
+											<span>Taller Asociado:</span> Python
+										</p>
+									</div>
+									<div id="flechFundaProg"></div>
+								</div>
+							</div>
+							<div>
+								ladero
+							</div>
 						</div>
 					</div>
 				</div>

@@ -1,3 +1,10 @@
+.imgModulosRespuestasInfor{
+	background: url("../img/modulo.png") 0px 0px;
+	width: 145px;
+	height: 237px;
+	float: left;
+}
+
 .informacionIzqInformatorio{
 	height: 40px;
 	width: 99%;
@@ -8,6 +15,7 @@
 .preguntasInformatorio{
 	width: 100%;
 	margin: 10px;
+	position: relative;
 }
 
 .preguntasInformatorio h1{
@@ -50,6 +58,104 @@
 	background-color: #26C9F2;
 }
 
+#contImgModulosRespuestasInfor{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+#contFundaProg{
+	width: 330px;
+	height: auto;
+	position: absolute;	
+	border-radius: 8px;
+	top: 150px;
+	left: -225px;
+	display: none;
+}
+
+#fundaProg{
+	border-radius: 8px;
+	width: 330px;
+	height: auto;
+	background:#515152;
+	position: absolute;
+	margin:0px auto;
+}
+
+#fundaProg h2{
+	font-family: Asap;
+	font-size: 40px;
+	text-align: left;
+	color: white;
+	border-radius: 5px;
+	margin: 4px 0px 4px 7px;
+	width: 300px;
+	padding: 5px;
+	text-decoration: underline;
+	background-color: rgba(225,225,225,0.3);
+}
+
+#fundaProg p{
+	font-family: Asap;
+	font-size: 20px;
+	color: #bbb;
+}
+
+#fundaProg p span{
+	font-weight: bolder;
+}
+
+#fundaProg p em{
+	font-family: Asap;
+	font-size: 16px;	
+}
+
+#flechFundaProg{
+	display: block;
+	margin:0 auto;
+	position: relative;
+	width:0;
+	height:0;
+	top: 250px;
+	left: 180px;
+	border-color:transparent transparent transparent #515152;
+	border-style:solid;
+	border-width:20px;
+}
+
+#imgModulos1{
+	margin-left: 120px;
+}
+
+#imgModulos2{
+	background-position: -145px 0px;
+}
+
+#imgModulos3{
+	background-position: -290px 0px;
+}
+
+#imgModulos4{
+	background-position: -435px 0px;
+}
+
+#imgModulo5-1{
+	position: relative;
+	top: 190px;
+	left: 80px;
+	height: 35px;
+	width: 63px;
+}
+
+#imgModulo5-2{
+	position: relative;
+	top: 190px;
+	left: -3px;
+	height: 35px;
+	width: 58px;
+}
+
 #imgMouse{
 	width: 30%;
 	height: 150px;
@@ -74,7 +180,7 @@
 }
 
 #contPreguntasInformatorio{
-	width: 824px;
+	width: 810px;
 	height: auto;
 }
 
@@ -155,6 +261,8 @@
 	margin: 0px 5px 5px 5px;
 	border-radius: 5px;
 	background-color: #ddd;
+	position: relative;
+	height: auto;
 }
 
 #respuestasInfor p{
