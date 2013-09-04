@@ -18,6 +18,24 @@
 	position: relative;
 }
 
+.preguntasInformatorioActivado{
+	width: 100%;
+	margin: 10px;
+	position: relative;	
+}
+
+.preguntasInformatorioActivado h1{
+	color: white;
+	font-family: Asap;
+	font-size: 40px;
+	border-radius: 8px;
+	background-color: #bbb;
+	border: 3px solid white;
+	cursor: pointer;
+	height: 48px;
+	padding-left: 5px;
+}
+
 .preguntasInformatorio h1{
 	color: #bbb;
 	font-family: Asap;
@@ -72,23 +90,36 @@
 	color: #858484;
 }
 
+#cadaExperienciasInfor{
+	width: 725px;
+	margin-left: -100px;
+	height: 200px;
+	float: left;
+	border-radius: 8px;
+}
+
+#cadaProyectosInfor{
+	width: 725px;
+	margin-right: -100px;
+	height: 200px;
+	float: left;
+	border-radius: 8px;
+}
+
+#cadaGaleriaInfor{
+	width: 725px;
+	margin-left: -100px;
+	height: 200px;
+	float: left;
+	border-radius: 8px;
+}
+
 #contTituloInformatorio{
 	width: 100%;
-	height: 150px;
+	height: 250px;
 	background-color: #26C9F2;
 }
 
-<<<<<<< HEAD
-#imgModulosInformatorio1{
-	background-position: -143px -4px;
-}
-
-#imgModulosInformatorio2{
-	background-position: -288px -4px;
-}
-#imgModulosInformatorio3{
-	background-position: -431px -4px;
-=======
 #contImgModulosRespuestasInfor{
 	width: 100%;
 	height: auto;
@@ -98,7 +129,7 @@
 #contIngSoft{
 	width: 580px;
 	height: 20px;
-	top: 110px;
+	top: -55px;
 	left: 120px;
 	position: absolute;	
 	border-radius: 8px;
@@ -108,7 +139,7 @@
 #contGestInfor{
 	width: 580px;
 	height: auto;
-	top: 25px;
+	top: -140px;
 	left: 120px;
 	position: absolute;	
 	border-radius: 8px;
@@ -120,7 +151,7 @@
 	height: auto;
 	position: absolute;	
 	border-radius: 8px;
-	top: 150px;
+	top: 60px;
 	left: -225px;
 	display: none;
 }
@@ -128,7 +159,7 @@
 #contModIngles{
 	width: 580px;
 	height: auto;
-	top: 610px;
+	top: 527px;
 	left: 120px;
 	position: absolute;	
 	border-radius: 8px;
@@ -138,7 +169,7 @@
 #contProgAvanAplic{
 	width: 350px;
 	height: auto;
-	top: -30px;
+	top: -186px;
 	left: 450px;
 	position: absolute;	
 	border-radius: 8px;
@@ -148,6 +179,24 @@
 #conProfesoresModRespInfo{
 	margin: 5px;
 	padding: 5px;
+}
+
+#contExperienciasInfor{
+	width: 100%;
+	height: 200px;
+	margin: 15px;
+}
+
+#contProyectosInfor{
+	width: 100%;
+	height: 200px;
+	margin: 15px;
+}
+
+#contGaleriaInfor{
+	width: 100%;
+	height: 200px;
+	margin: 15px;
 }
 
 #fundaProg{
@@ -176,6 +225,8 @@
 	font-family: Asap;
 	font-size: 20px;
 	color: #bbb;
+	padding: 8px;
+	text-align: justify;
 }
 
 #fundaProg p span{
@@ -193,11 +244,11 @@
 	position: relative;
 	width:0;
 	height:0;
-	top: 300px;
+	top: 395px;
 	left: -80px;
 	border-color:#515152 transparent transparent transparent;
 	border-style:solid;
-	border-width:35px;
+	border-width:25px;
 }
 
 #flechFundaProg{
@@ -219,11 +270,11 @@
 	position: relative;
 	width:0;
 	height:0;
-	top: 210px;
+	top: 305px;
 	left: 70px;
 	border-color:#515152 transparent transparent transparent;
 	border-style:solid;
-	border-width:35px;
+	border-width:30px;
 }
 
 #flechModIngles{
@@ -245,11 +296,11 @@
 	position: relative;
 	width:0;
 	height:0;
-	top: 348px;
+	top: 445px;
 	left: -5px;
 	border-color:#515152 transparent transparent transparent;
 	border-style:solid;
-	border-width:35px;	
+	border-width:20px;	
 }
 
 #gestInfor{
@@ -278,6 +329,8 @@
 	font-family: Asap;
 	font-size: 20px;
 	color: #bbb;
+	padding: 8px;
+	text-align: justify;
 }
 
 #gestInfor p span{
@@ -309,6 +362,8 @@
 #ingSoft p{
 	font-family: Asap;
 	font-size: 20px;
+	padding: 8px;
+	text-align: justify;
 	color: #bbb;
 }
 
@@ -334,16 +389,15 @@
 
 #imgModulos5{
 	position: absolute;
-	top: 546px;
+	top: 467px;
 	left: 345px;
-	height: 35px;
+	height: 50px;
 	width: 120px;
->>>>>>> a5146fa2db73f78ff755ac946ab4dd46a5182d25
 }
 
 #imgMouse{
 	width: 30%;
-	height: 150px;
+	height: 250px;
 	float: left;
 }
 
@@ -388,12 +442,13 @@
 }
 
 #informatorio{
-	height: 60px;
+	height: 90px;
 	width: 100%;
-	font-size: 60px;
+	font-size: 80px;
 	color: white;
 	font-family: Asap;
-	margin-top: 30px;
+	margin-top: 50px;
+	margin-left: 20px;
 	font-weight: bolder;
 }
 
@@ -427,11 +482,6 @@
 	border:2px solid #bbb; 
 }
 
-<<<<<<< HEAD
-#modulosRespuestasInfor{
-	position: relative;
-	height: auto;
-=======
 #modIngles{
 	border-radius: 8px;
 	width: 580px;
@@ -458,11 +508,12 @@
 	font-family: Asap;
 	font-size: 20px;
 	color: #bbb;
+	padding: 8px;
+	text-align: justify;
 }
 
 #modIngles p span{
 	font-weight: bolder;
->>>>>>> a5146fa2db73f78ff755ac946ab4dd46a5182d25
 }
 
 #modulosRespuestasInfor h2{
@@ -480,7 +531,7 @@
 	border-radius: 8px;
 }
 
-#respuestasInfor{
+#respuestasInfor1, #respuestasInfor2, #respuestasInfor3{
 	width: 99%;
 	position: inherit;
 	margin: 0px 5px 5px 5px;
@@ -488,6 +539,7 @@
 	background-color: #ddd;
 	position: relative;
 	height: auto;
+	display: none;
 }
 
 #progAvanAplic{
@@ -516,14 +568,12 @@
 	font-family: Asap;
 	font-size: 20px;
 	color: #bbb;
+	padding: 8px;
+	text-align: justify;
 }
 
 #progAvanAplic p span{
 	font-weight: bolder;
-}
-
-#profesoresMorRespInfo{
-	
 }
 
 #respuestasInfor p{
@@ -544,16 +594,75 @@
 }
 
 #sloganInformatorio{
-	height: 40px;
+	height: 60px;
 	width: 100%;
-	font-size: 24px;
+	font-size: 30px;
+	margin-left: 20px;
+	margin-top: -10px;
 	color: white;
 	font-family: Asap;
 }
 
+#textExperienciasInfor{
+	height: 97%;
+	width: 190px;
+	border: 4px solid #26C9F2;
+	border-radius: 100%;
+	text-align: center;
+	vertical-align: middle;
+	float: left;
+	position: relative;
+	background-color: white;
+}
+
+#textExperienciasInfor h2{
+	font-family: Asap;
+	font-size: 25px;
+	font-weight: bolder;
+	padding-top:80px; 
+}
+
+#textProyectosInfor{
+	height: 97%;
+	width: 190px;
+	border: 4px solid #bbb;
+	border-radius: 100%;
+	text-align: center;
+	vertical-align: middle;
+	float: left;
+	position: relative;
+	background-color: white;
+}
+
+#textProyectosInfor h2{
+	font-family: Asap;
+	font-size: 25px;
+	font-weight: bolder;
+	padding-top:80px;
+}
+
+#textGaleriaInfor{
+	height: 97%;
+	width: 190px;
+	border: 4px solid #378B25;
+	border-radius: 100%;
+	text-align: center;
+	vertical-align: middle;
+	float: left;
+	position: relative;
+	background-color: white;
+}
+
+#textGaleriaInfor h2{
+	font-family: Asap;
+	font-size: 25px;
+	font-weight: bolder;
+	padding-top:80px;
+}
+
 #tituloInformatorio{
 	width: 70%;
-	height: 150px;
+	height: 250px;
 	float: left;
 }
 

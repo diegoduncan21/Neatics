@@ -68,6 +68,22 @@
 	display: none;
 }
 
+.subMenu_activado{
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	height: 40px;
+	border: 3px solid black;
+	background-color: #286784;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 5px;
+	position: relative;	
+	text-align: center;
+	cursor: pointer;
+
+}
+
 .subMenu_informatorio:hover{
 	background-color: #286784;
 	cursor: pointer;
