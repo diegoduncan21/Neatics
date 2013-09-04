@@ -13,24 +13,24 @@
 	<!--<script type="text/javascript" scr="/static/js/homeInformatorio.js"></script>-->
 	<script type="text/javascript">
 		function initialize() {
-			var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
-			var mapOptions = {
-			  	zoom: 4,
-			    center: myLatlng,
-			    mapTypeId: google.maps.MapTypeId.ROADMAP
-			}
-			var map = new google.maps.Map(document.getElementById('mapaInformatorio'), mapOptions);
+		  var myLatlng = new google.maps.LatLng(-27.453337,-58.987152);
+		  var mapOptions = {
+		    zoom: 15,
+		    center: myLatlng,
+		    mapTypeId: google.maps.MapTypeId.ROADMAP
+		  }
+		  console.log("ladero");
+		  var map = new google.maps.Map(document.getElementById('mapaUbicacionInformatorio'), mapOptions);
 
-			var marker = new google.maps.Marker({
-			    position: myLatlng,
-			    map: map,
-			    title: 'Informatorio'
-			});
+		  var marker = new google.maps.Marker({
+		      position: myLatlng,
+		      map: map,
+		      title: 'Informatorio'
+		  });
 		}
 
 		google.maps.event.addDomListener(window, 'load', initialize);
 	</script>
-
 {% endblock %}
 
 {% block contenido %}
@@ -45,7 +45,6 @@
 	</div>
 	<div id="contInfoInformatorio">
 		<div id="mapaUbicacionInformatorio">
-			<div id="mapaInformatorio"></div>
 		</div>
 		<div id="informacionInformatorio">
 			<div id="informacionIzqInformatorio">
@@ -79,5 +78,56 @@
 		<aside class='banners'>
 			{% include 'banners.html' %}
 		</aside>
+		<div id="conPricipalInformatorio">
+			<div id="contPreguntasInformatorio">
+				<div class="preguntasInformatorio">
+					<h1>¿Qué es?</h1>
+					<div class="respuestasInformatorio" id="respuestasInfor">
+						<p>
+							El Informatorio, así llamado al Laboratorio de Capacitaciones Informáticas de la Provincia del Chaco, toma su nombre justamente por ser un Laboratorio Informático. Nace como una iniciativa que atiende a la falta de recursos humanos calificados en conocimiento técnico para la industria SSI chaqueña, identificado como uno de los principales problemas de la Industria, a partir del diálogo y la participación ciudadana en el Foro de Competitividad de la Industria de Software y Servicios Informáticos (SSI) Chaco realizado desde el año 2009 al 2010. 
+						</p>
+						<p>
+							En este sentido la comisión de Recursos Humanos del mencionado foro determinó que una de las estrategias a implementar para el desarrollo de la industria sería la “Formación de Recursos Humanos en Herramientas Informáticas Específicas”. Se convocó a la Empresa Sistemas Globales S.A. y al Polo It Chaco, para consensuar la idea de montar el laboratorio con una capacitación específica que genere recursos humanos con la capacidad de un técnico informático en el plazo de un año. 
+						</p>
+						<p>
+							También se decidió en esta instancia que sería deseable el dictado de otros cursos que contribuyan a consolidar conocimientos de los empleados actuales de las empresas, como también de los futuros empleados. Al avanzar en estas reuniones emergió que la participación de la Universidad Tecnológica Nacional Facultad Regional Resistencia resultaba fundamental.
+						</p>
+					</div>
+				</div>
+				<div class="preguntasInformatorio">
+					<h1>¿Para qué?</h1>
+					<div class="respuestasInformatorio" id="respuestasInfor">
+						<p>
+							Lo hacemos para formar a los jóvenes en las competencias necesarias para ingresar a la industria creciente de Software y Servicios Informáticos de la Provincia del Chaco.
+						</p>
+					</div>
+				</div>
+				<div class="preguntasInformatorio">
+					<h1>¿Cómo?</h1>
+					<div class="respuestasInformatorio" id="respuestasInfor">
+						<p>
+							Primero, implementamos un Curso de Desarrollo Avanzado de Aplicaciones Informáticas para los egresados con mejores promedios y cualidades de las escuelas técnicas de la provincia.
+						</p>
+						<p>
+							Segundo, promovemos la realización de otros cursos que formen capacidades requeridas por las empresas de la provincia en tecnologías específicas así como en lenguajes necesarios para incrementar la competitividad de la industria SSI.
+						</p>
+						<p>
+							Tercero, mantenemos el diálogo con diferentes actores del sector para lograrcanalizar las necesidades de formación mediante el Informatorio.
+						</p>
+						<div id="modulosRespuestasInfor">
+							<h2>Modulos:</h2>
+							<p>- Fundamentos de la programación</p>
+							<p>- Gestión de la Información</p>
+							<p>- Ingeniería de Software</p>
+							<p>- Tecnologías .NET</p>
+							<p>- Tecnologías Java</p>
+							<p>- Tecnologías PHP</p>
+
+							<img src="/static/img/modulo.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 {% endblock %}
