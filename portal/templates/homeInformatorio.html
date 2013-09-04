@@ -19,7 +19,6 @@
 		    center: myLatlng,
 		    mapTypeId: google.maps.MapTypeId.ROADMAP
 		  }
-		  console.log("ladero");
 		  var map = new google.maps.Map(document.getElementById('mapaUbicacionInformatorio'), mapOptions);
 
 		  var marker = new google.maps.Marker({
@@ -30,6 +29,27 @@
 		}
 
 		google.maps.event.addDomListener(window, 'load', initialize);
+
+		$(document).ready(function(){
+			var clases = ["contMasInfoModulo1","contMasInfoModulo2","contMasInfoModulo3","contMasInfoModulo4","contMasInfoModulo5"];
+			$(".imgModulo").mouseenter(function(){
+				var id = $(this).attr('id').split('')[10];
+				id = id - 1;
+				var modulo = clases[id];
+				$("." + modulo).animate({
+					opacity: "show"
+				}, "slow")
+			})
+
+			$(".imgModulo").mouseleave(function(){
+				var id = $(this).attr('id').split('')[10];
+				id = id - 1;
+				var modulo = clases[id];
+				$("." + modulo).animate({
+					opacity: "hide"
+				}, "slow")
+			})
+		})
 	</script>
 {% endblock %}
 
@@ -45,7 +65,6 @@
 	</div>
 	<div id="contInfoInformatorio">
 		<div id="mapaUbicacionInformatorio">
-			
 		</div>
 		<div id="informacionInformatorio">
 			<div id="informacionIzqInformatorio">
@@ -116,23 +135,97 @@
 							Tercero, mantenemos el diálogo con diferentes actores del sector para lograrcanalizar las necesidades de formación mediante el Informatorio.
 						</p>
 						<div id="modulosRespuestasInfor">
-							<div>	
-								<h2>Modulos:</h2>
-								<p>- Fundamentos de la programación</p>
-								<p>- Gestión de la Información</p>
-								<p>- Ingeniería de Software</p>
-								<p>- Tecnologías .NET</p>
-								<p>- Tecnologías Java</p>
-								<p>- Tecnologías PHP</p>
-							</div>	
-							<div class="contImgModuloInformatorio">
-								<div class="imgModulosInformatorio"></div>
-								<div id="imgModulosInformatorio1" class="imgModulosInformatorio"></div>
-								<div id="imgModulosInformatorio2" class="imgModulosInformatorio"></div>
-								<div id="imgModulosInformatorio3" class="imgModulosInformatorio"></div>
+							<h2>Modulos:</h2>
+							<p>- Fundamentos de la programación</p>
+							<p>- Gestión de la Información</p>
+							<p>- Ingeniería de Software</p>
+							<p>- Tecnologías .NET</p>
+							<p>- Tecnologías Java</p>
+							<p>- Tecnologías PHP</p>
+
+							<div id="contImgModulosRespuestasInfor">
+								<div id="imgModulos1" class="imgModulo imgModulosRespuestasInfor"></div>
+								<div id="imgModulos2" class="imgModulo imgModulosRespuestasInfor">
+								</div>
+								<div id="imgModulos3" class="imgModulo imgModulosRespuestasInfor">
+								</div>
+								<div id="imgModulos4" class="imgModulo imgModulosRespuestasInfor"></div>
+								<div class="imgModulo" id="imgModulos5"></div>
+								<div id="contFundaProg" class="contMasInfoModulo1">
+									<div id="fundaProg">
+										<h2>ET1: Fundamentos de la Programación</h2>
+										<p>
+											<span>Objetivo:</span> El objetivo general de este eje temático es que los estudiantes sean capaces de resolver de manera eficaz distintos problemas de carácter general. Este objetivo requiere que los alumnos adquieran el conocimiento teórico y práctico sobre las técnicas básicas de programación estructurada consiguiendo la obtención de ideas <em>intuitivas y claras de los conceptos y técnicas estudiados,</em> y permitirá entender fácilmente nuevos modelos facilitando la aplicación práctica de los algoritmos utilizando un lenguaje de programación de propósito general.
+										</p>
+										<p>
+											<span>Contenidos Mínimos:</span> Concepto de Informática, Computadora, Hardware y Software. Algoritmia, Algoritmo, resolución de problemas con algoritmos. Constantes, Variables, Estructuras de Datos: arreglos, listas, pilas, colas, arboles. Estructuras de control.
+										</p>
+										<p>
+											<span>Taller Asociado:</span> Python
+										</p>
+									</div>
+									<div id="flechFundaProg"></div>
+								</div>
+								<div id="contGestInfor" class="contMasInfoModulo2">
+									<div id="gestInfor">
+										<h2>ET2: Gestión de la Información</h2>
+										<p>
+											<span>Objetivo:</span> Que el alumno comprenda los conceptos fundamentales relacionados con la gestión eficiente de la información. Que se familiarice con la teoría y la práctica de la gestión de la información a través de bases de datos. Que el alumno sea capaz de diseñar, crear y manipular bases de datos.
+										</p>
+										<p>
+											<span>Contenidos Mínimos:</span> Concepto de dato e información. Concepto de Archivo, tipos de archivo, organización y acceso. Sistema de archivos Vs Bases de Datos. Teoría de Bases de Datos. Modelos Conceptual, Lógico y Físico de datos. Modelo entidad relación. Modelo relacional. Lenguaje de Definición de Datos, Lenguajes de Manipulación de Datos. Lenguaje SQL. Conceptos de Administración de Bases de Datos
+										</p>
+										<p>
+											<span>Taller Asociado:</span> MySql
+										</p>
+									</div>
+									<div id="flechGestInfor"></div>
+								</div>
+								<div id="contIngSoft" class="contMasInfoModulo3">
+									<div id="ingSoft">
+										<h2>ET3: Ingeniería del Software</h2>
+										<p>
+											<span>Objetivo:</span> Entender qué es Ingeniería del Software. Conocer los diferentes modelos de ciclo de vida del software y familiarizarse con el proceso de desarrollo de software siguiendo metodologías ágiles.
+										</p>
+										<p>
+											<span>Contenidos Mínimos:</span> Concepto de Ingeniería del Software, modelos de ciclo vida. Flujos de trabajo en el proceso de desarrollo de software. Requisitos, Análisis, Diseño, Implementación y Pruebas. Metodologías ágiles para el desarrollo de software: Scrum. Introducción a la planificación de proyectos Software con metodologías ágiles.
+										</p>
+									</div>
+									<div id="flechIngSoft"></div>
+								</div>
+								<div id="contProgAvanAplic" class="contMasInfoModulo4">
+									<div id="progAvanAplic">
+										<h2>ET4: Programación avanzada de aplicaciones</h2>
+										<p>
+											<span>Objetivo:</span> Que el alumno conozca y sea capaz de desarrollar aplicaciones utilizando cualquiera de las tecnologías actuales que se impartan en los talleres que componen el eje temático.
+										</p>
+										<p>
+											<span>Taller de CMS:</span> Druppal
+										</p>
+										<p>
+											<span>Taller de Java:</span> Java Web, Spring Framework, Hibernate
+										</p>
+										<p>
+											<span>Taller de .Net:</span> ASP.NET, NHibernate, Silverlight
+										</p>
+										<p>
+											<span>Taller de PHP:</span> Zend Framework, Symphony
+										</p>
+									</div>
+									<div id="flechProgAvanAplic"></div>
+								</div>
+								<div id="contModIngles" class="contMasInfoModulo5">
+									<div id="modIngles">
+										<h2>ET5: Idioma Inglés</h2>
+										<p>
+											<span>Contenidos Mínimos:</span> verbo to be, adjetivos posesivos, pronombres, preposiciones, existencial there (presente y pasado), presente simple, adverbios, modales (can y can’t, would) gerundios, pasado simple, presente continuo, cuantificadores, be going to, adjetivos comparativos y superlativos, presente perfecto.
+										</p>
+									</div>
+									<div id="flechModIngles"></div>
+								</div>
 							</div>
-							<div>
-								<h2>Profesores:</h2>
+							<div id="conProfesoresModRespInfo">
+								<h2>Profesores</h2>
 								<ul class="UlPrincipalModulosRespuestasInfor">
 									<li>Noelia Pinto (2012 - 2013)</li>
 									<ul class="LiDistintoModulosRespuestasInfor">
