@@ -42,7 +42,7 @@
 									if (data.errors){
 										// mostrar error
 									}else{
-										$('#signin').empty().unbind("click").html("<span id='icoUser'>&nbsp;</span>"+data.user+"<a href={% url logout %} class=\"logueado navbar-link\">(Salir)</a>")
+										$('#signin').empty().unbind("click").html("<span id='icoUser'>&nbsp;</span>"+data.user+"<a href={% url 'logout' %} class=\"logueado navbar-link\">(Salir)</a>")
 										$('#barraHeader').animate({top:'-=173px'})
 										$('#signin').animate({top:'+=20px'})
 										$('#idioma').animate({top:'+=173px'})
@@ -87,7 +87,7 @@
 								if (data.duplicated_user) {
 									// mostrar errores
 								}else{
-									$('#signin').empty().unbind("click").html("<span id='icoUser'>&nbsp;</span>"+data.user+"<a href={% url logout %} class=\"logueado navbar-link\">(Salir)</a>")
+									$('#signin').empty().unbind("click").html("<span id='icoUser'>&nbsp;</span>"+data.user+"<a href={% url 'logout' %} class=\"logueado navbar-link\">(Salir)</a>")
 									$('#barraHeader').animate({top:'-=173px'})
 									$('#signin').animate({top:'+=20px'})
 									$('#idioma').animate({top:'+=173px'})
