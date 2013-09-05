@@ -1,0 +1,124 @@
+.empresa-social {
+	height: 80px;
+}
+
+.empresa-social div:first-child {
+	float: left;
+	height: 80px;
+	width: 80px;
+	margin-right: 10px;
+}
+
+.empresa-social-text {
+	display: table-cell;
+	vertical-align: middle;
+	height: 80px;
+}
+
+.tab-body-left {
+	width: 350px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.tab-body-left > div {
+	width:315px;
+	margin:10px;
+	color: black;
+}
+
+.tab-body-right {
+	width: 650px;
+	display: inline-block;
+}
+
+.tab-body-right p {
+	margin: 5px;
+}
+
+.tab-content-header {
+	height: 130px;
+	border-bottom: solid 2px #C0BFC4;
+}
+
+.tab-empresas {
+	background: #C0BFC4;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	color: #019AD4;
+	display: table-cell;
+	font-size:20px;
+	height:42px;
+	margin: 2px;
+	text-align: center;
+	vertical-align: middle;
+	width: 100px;
+}
+
+
+#contenedor-empresa {
+
+}
+
+#header-empresa {
+	height:230px;
+	display:table-cell;
+	vertical-align:middle;
+	width:1024px; /* Mejorar esto despues */
+}
+
+
+#mapa-empresa {
+	height:215px;
+}
+
+#nombre-empresa {
+	font-size: 48px;
+}
+
+#slogan-empresa {
+	font-size: 28px;
+}
+
+#nombre-empresa,
+#slogan-empresa {
+	width:100%;
+	text-align:center;
+	color: #178BFF;
+}
+
+
+#tab-content-empresas {
+	border: solid 2px #C0BFC4;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+#tabs-empresas {
+	clear: both;
+	height: 42px;
+	padding-right: 40px;
+	text-align: -webkit-right;
+}
+
+#tabs-empresas > div {
+	display: inline-block;
+	margin:1px;
+}
+
+
+.icon-empresa-twitter {
+	background: url(/static/img/sprite-empresas.png);
+}
+
+.icon-empresa-face {
+	background: url(/static/img/sprite-empresas.png) 0px 257px;
+}
+
+.icon-empresa-mail {
+	background: url(/static/img/sprite-empresas.png) 0px 167px;
+}
+
+.icon-empresa-phone {
+	background: url(/static/img/sprite-empresas.png) 0px 79px;
+}
