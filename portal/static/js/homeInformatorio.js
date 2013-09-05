@@ -1,3 +1,4 @@
+/*Funcion para llamar a Google Maps*/
 function initialize() {
   var myLatlng = new google.maps.LatLng(-27.453337,-58.987152);
   var mapOptions = {
@@ -17,9 +18,11 @@ function initialize() {
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
+
 $(document).ready(function(){
   $("#subMenuInformatorio").attr('class','subMenu_activado');
 
+  /*Efectos para los div que aparecen cuando se pasa el mouse por arriba*/
   var clases = ["contMasInfoModulo1","contMasInfoModulo2","contMasInfoModulo3","contMasInfoModulo4","contMasInfoModulo5"];
   $(".imgModulo").mouseenter(function(){
     var id = $(this).attr('id').split('')[10];

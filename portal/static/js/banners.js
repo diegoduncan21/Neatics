@@ -1,3 +1,4 @@
+/*Efecto acordeon del menu del costado*/
 $(document).ready(function() {
       var opc = ['informatorio','empresas','empleos','polo','estudiar'];
       $(".logo_seccion").click(function(e) {
