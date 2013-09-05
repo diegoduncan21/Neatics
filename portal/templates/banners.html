@@ -9,10 +9,14 @@
 			</div>
 		</div>
 		<div class="subMenu_informatorio" id="subMenuInformatorio">
-			<a href="{% url template 'homeInformatorio' %}"><div class="textSubmenu">Home</div></a>
+			<a href="{% url template 'homeInformatorio' %}">
+				<div class="textSubmenu">Home</div>
+			</a>
 		</div>
 		<div class="subMenu_informatorio">
-			<div class="textSubmenu">Participar</div>
+			<a href="{% url template 'formularioInformatorio' %}">
+				<div class="textSubmenu">Participar</div>
+			</a>
 		</div>
 		<div class="subMenu_informatorio">
 			<div class="textGrandesSubmenu">Proyectos y Trabajos</div>
