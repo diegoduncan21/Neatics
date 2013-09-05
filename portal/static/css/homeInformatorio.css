@@ -1,0 +1,676 @@
+.imgModulosRespuestasInfor{
+	background: url("../img/modulo.png") 0px 0px;
+	width: 145px;
+	height: 237px;
+	float: left;
+}
+
+.informacionIzqInformatorio{
+	height: 40px;
+	width: 99%;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+.preguntasInformatorio{
+	width: 100%;
+	margin: 10px;
+	position: relative;
+}
+
+.preguntasInformatorioActivado{
+	width: 100%;
+	margin: 10px;
+	position: relative;	
+}
+
+.preguntasInformatorioActivado h1{
+	color: white;
+	font-family: Asap;
+	font-size: 40px;
+	border-radius: 8px;
+	background-color: #bbb;
+	border: 3px solid white;
+	cursor: pointer;
+	height: 48px;
+	padding-left: 5px;
+}
+
+.preguntasInformatorio h1{
+	color: #bbb;
+	font-family: Asap;
+	font-size: 40px;
+	border-radius: 8px;
+	border: 3px solid #bbb;
+	cursor: pointer;
+	height: 48px;
+	padding-left: 5px;
+}
+
+.preguntasInformatorio h1:hover{
+	color: white;
+	background-color: #bbb;
+	border: 3px solid white;
+}
+
+.textoInformacionInformatorio{
+	width: 80%;
+	height: 25px;
+	margin-top: 8px;
+	margin-left: 10px;
+	font-family: Asap;
+	font-size: 20px;
+	float: left;
+}
+
+.textoInformacionInformatorio a{
+	text-decoration: none;
+	color: black;
+	font-family: Asap;
+	font-size: 20px;
+}
+
+.UlPrincipalModulosRespuestasInfor{
+	margin-left: 50px;
+	list-style-type:square;
+}
+
+.LiDistintoModulosRespuestasInfor{
+	margin-left: 20px;
+	list-style-type: circle;
+	color: #858484;
+	margin-top: 3px;
+	,margin-bottom: 3px; 
+}
+
+.LiDistintoModulosRespuestasInfor li a{
+	text-decoration: none;
+	font-family: Asap;
+	font-size: 17px;
+	color: #858484;
+}
+
+#cadaExperienciasInfor{
+	width: 725px;
+	margin-left: -100px;
+	height: 200px;
+	float: left;
+	border-radius: 8px;
+}
+
+#cadaProyectosInfor{
+	width: 725px;
+	margin-right: -100px;
+	height: 200px;
+	float: left;
+	border-radius: 8px;
+}
+
+#cadaGaleriaInfor{
+	width: 725px;
+	margin-left: -100px;
+	height: 200px;
+	float: left;
+	border-radius: 8px;
+}
+
+#contTituloInformatorio{
+	width: 100%;
+	height: 250px;
+	background-color: #26C9F2;
+}
+
+#contImgModulosRespuestasInfor{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+#contIngSoft{
+	width: 580px;
+	height: 20px;
+	top: -55px;
+	left: 120px;
+	position: absolute;	
+	border-radius: 8px;
+	display: none;
+}
+
+#contGestInfor{
+	width: 580px;
+	height: auto;
+	top: -140px;
+	left: 120px;
+	position: absolute;	
+	border-radius: 8px;
+	display: none;
+}
+
+#contFundaProg{
+	width: 330px;
+	height: auto;
+	position: absolute;	
+	border-radius: 8px;
+	top: 60px;
+	left: -225px;
+	display: none;
+}
+
+#contModIngles{
+	width: 580px;
+	height: auto;
+	top: 527px;
+	left: 120px;
+	position: absolute;	
+	border-radius: 8px;
+	display: none;
+}
+
+#contProgAvanAplic{
+	width: 350px;
+	height: auto;
+	top: -186px;
+	left: 450px;
+	position: absolute;	
+	border-radius: 8px;
+	display: none;
+}
+
+#conProfesoresModRespInfo{
+	margin: 5px;
+	padding: 5px;
+}
+
+#contExperienciasInfor{
+	width: 100%;
+	height: 200px;
+	margin: 15px;
+}
+
+#contProyectosInfor{
+	width: 100%;
+	height: 200px;
+	margin: 15px;
+}
+
+#contGaleriaInfor{
+	width: 100%;
+	height: 200px;
+	margin: 15px;
+}
+
+#fundaProg{
+	border-radius: 8px;
+	width: 330px;
+	height: auto;
+	background:#515152;
+	position: absolute;
+	margin:0px auto;
+}
+
+#fundaProg h2{
+	font-family: Asap;
+	font-size: 40px;
+	text-align: left;
+	color: white;
+	border-radius: 5px;
+	margin: 4px 0px 4px 7px;
+	width: 300px;
+	padding: 5px;
+	text-decoration: underline;
+	background-color: rgba(225,225,225,0.3);
+}
+
+#fundaProg p{
+	font-family: Asap;
+	font-size: 20px;
+	color: #bbb;
+	padding: 8px;
+	text-align: justify;
+}
+
+#fundaProg p span{
+	font-weight: bolder;
+}
+
+#fundaProg p em{
+	font-family: Asap;
+	font-size: 16px;	
+}
+
+#flechGestInfor{
+	display: block;
+	margin:0 auto;
+	position: relative;
+	width:0;
+	height:0;
+	top: 395px;
+	left: -80px;
+	border-color:#515152 transparent transparent transparent;
+	border-style:solid;
+	border-width:25px;
+}
+
+#flechFundaProg{
+	display: block;
+	margin:0 auto;
+	position: relative;
+	width:0;
+	height:0;
+	top: 250px;
+	left: 180px;
+	border-color:transparent transparent transparent #515152;
+	border-style:solid;
+	border-width:20px;
+}
+
+#flechIngSoft{
+	display: block;
+	margin:0 auto;
+	position: relative;
+	width:0;
+	height:0;
+	top: 305px;
+	left: 70px;
+	border-color:#515152 transparent transparent transparent;
+	border-style:solid;
+	border-width:30px;
+}
+
+#flechModIngles{
+	display: block;
+	margin:0 auto;
+	position: relative;
+	width:0;
+	height:0;
+	top: -57px;
+	left: -2px;
+	border-color: transparent transparent #515152 transparent;
+	border-style:solid;
+	border-width:30px;
+}
+
+#flechProgAvanAplic{
+	display: block;
+	margin:0 auto;
+	position: relative;
+	width:0;
+	height:0;
+	top: 445px;
+	left: -5px;
+	border-color:#515152 transparent transparent transparent;
+	border-style:solid;
+	border-width:20px;	
+}
+
+#gestInfor{
+	border-radius: 8px;
+	width: 580px;
+	height: auto;
+	background:#515152;
+	position: absolute;
+	margin:0px auto;
+}
+
+#gestInfor h2{
+	font-family: Asap;
+	font-size: 40px;
+	text-align: left;
+	color: white;
+	border-radius: 5px;
+	margin: 4px 0px 4px 7px;
+	width: 550px;
+	padding: 5px;
+	text-decoration: underline;
+	background-color: rgba(225,225,225,0.3);
+}
+
+#gestInfor p{
+	font-family: Asap;
+	font-size: 20px;
+	color: #bbb;
+	padding: 8px;
+	text-align: justify;
+}
+
+#gestInfor p span{
+	font-weight: bolder;
+}
+
+#ingSoft{
+	border-radius: 8px;
+	width: 580px;
+	height: auto;
+	background:#515152;
+	position: absolute;
+	margin:0px auto;
+}
+
+#ingSoft h2{
+	font-family: Asap;
+	font-size: 40px;
+	text-align: left;
+	color: white;
+	border-radius: 5px;
+	margin: 4px 0px 4px 7px;
+	width: 550px;
+	padding: 5px;
+	text-decoration: underline;
+	background-color: rgba(225,225,225,0.3);
+}
+
+#ingSoft p{
+	font-family: Asap;
+	font-size: 20px;
+	padding: 8px;
+	text-align: justify;
+	color: #bbb;
+}
+
+#ingSoft p span{
+	font-weight: bolder;
+}
+
+#imgModulos1{
+	margin-left: 120px;
+}
+
+#imgModulos2{
+	background-position: -145px 0px;
+}
+
+#imgModulos3{
+	background-position: -290px 0px;
+}
+
+#imgModulos4{
+	background-position: -435px 0px;
+}
+
+#imgModulos5{
+	position: absolute;
+	top: 467px;
+	left: 345px;
+	height: 50px;
+	width: 120px;
+}
+
+#imgMouse{
+	width: 30%;
+	height: 250px;
+	float: left;
+}
+
+#imgMouse img{
+	float: right;
+}
+
+#contInfoInformatorio{
+	width: 100%;
+	height: 200px;
+	border-top: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+}
+
+#conPricipalInformatorio{
+	width: 824px;
+	float: left;
+	height: auto;
+}
+
+#contPreguntasInformatorio{
+	width: 810px;
+	height: auto;
+}
+
+#emailInformatorio{
+	height: 20px;
+	width: 27px;
+	background: url("../img/iconosCelestes.png") repeat 0px 0px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+#faceInformatorio{
+	height: 25px;
+	width: 27px;
+	background: url("../img/iconosCelestes.png") repeat 0px -20px;
+	float: left;
+	margin-left: 15px;
+	margin-top: 10px;	
+}
+
+#informatorio{
+	height: 90px;
+	width: 100%;
+	font-size: 80px;
+	color: white;
+	font-family: Asap;
+	margin-top: 50px;
+	margin-left: 20px;
+	font-weight: bolder;
+}
+
+#informacionInformatorio{
+	height: 200px;
+	width: 69.5%;
+	float: left;
+}
+
+#informacionIzqInformatorio{
+	width: 50%;
+	height: 200px;
+	float: left;
+}
+
+#dirInformatorio{
+	height: 24px;
+	width: 27px;
+	background: url("../img/iconosCelestes.png") repeat 0px -87px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+#mapaUbicacionInformatorio{
+	width: 30%;
+	height: 190px;
+	float: left;
+	margin-top: 3px;
+	border-radius: 5px;
+	border:2px solid #bbb; 
+}
+
+#modIngles{
+	border-radius: 8px;
+	width: 580px;
+	height: auto;
+	background:#515152;
+	position: absolute;
+	margin:0px auto;
+}
+
+#modIngles h2{
+	font-family: Asap;
+	font-size: 40px;
+	text-align: left;
+	color: white;
+	border-radius: 5px;
+	margin: 4px 0px 4px 7px;
+	width: 550px;
+	padding: 5px;
+	text-decoration: underline;
+	background-color: rgba(225,225,225,0.3);
+}
+
+#modIngles p{
+	font-family: Asap;
+	font-size: 20px;
+	color: #bbb;
+	padding: 8px;
+	text-align: justify;
+}
+
+#modIngles p span{
+	font-weight: bolder;
+}
+
+#modulosRespuestasInfor h2{
+	font-family: Asap;
+	font-size: 17px;
+	text-align: justify;
+	text-transform: uppercase;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+#modulosRespuestasInfor img{
+	position: relative;
+	left: 130px;
+	border-radius: 8px;
+}
+
+#respuestasInfor1, #respuestasInfor2, #respuestasInfor3{
+	width: 99%;
+	position: inherit;
+	margin: 0px 5px 5px 5px;
+	border-radius: 5px;
+	background-color: #ddd;
+	position: relative;
+	height: auto;
+	display: none;
+}
+
+#progAvanAplic{
+	border-radius: 8px;
+	width: 350px;
+	height: auto;
+	background:#515152;
+	position: absolute;
+	margin:0px auto;
+}
+
+#progAvanAplic h2{
+	font-family: Asap;
+	font-size: 17px;
+	text-align: left;
+	color: white;
+	border-radius: 5px;
+	margin: 4px 0px 4px 7px;
+	width: 320px;
+	padding: 5px;
+	text-decoration: underline;
+	background-color: rgba(225,225,225,0.3);
+}
+
+#progAvanAplic p{
+	font-family: Asap;
+	font-size: 20px;
+	color: #bbb;
+	padding: 8px;
+	text-align: justify;
+}
+
+#progAvanAplic p span{
+	font-weight: bolder;
+}
+
+#respuestasInfor p{
+	padding: 5px 12px 5px 12px; 
+	font-family: Asap;
+	font-size: 17px;
+	text-indent: 20px;
+	text-align: justify;
+}
+
+#rssInformatorio{
+	height: 24px;
+	width: 27px;
+	background: url("../img/iconosCelestes.png") repeat 0px -64px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+#sloganInformatorio{
+	height: 60px;
+	width: 100%;
+	font-size: 30px;
+	margin-left: 20px;
+	margin-top: -10px;
+	color: white;
+	font-family: Asap;
+}
+
+#textExperienciasInfor{
+	height: 97%;
+	width: 190px;
+	border: 4px solid #26C9F2;
+	border-radius: 100%;
+	text-align: center;
+	vertical-align: middle;
+	float: left;
+	position: relative;
+	background-color: white;
+}
+
+#textExperienciasInfor h2{
+	font-family: Asap;
+	font-size: 25px;
+	font-weight: bolder;
+	padding-top:80px; 
+}
+
+#textProyectosInfor{
+	height: 97%;
+	width: 190px;
+	border: 4px solid #bbb;
+	border-radius: 100%;
+	text-align: center;
+	vertical-align: middle;
+	float: left;
+	position: relative;
+	background-color: white;
+}
+
+#textProyectosInfor h2{
+	font-family: Asap;
+	font-size: 25px;
+	font-weight: bolder;
+	padding-top:80px;
+}
+
+#textGaleriaInfor{
+	height: 97%;
+	width: 190px;
+	border: 4px solid #378B25;
+	border-radius: 100%;
+	text-align: center;
+	vertical-align: middle;
+	float: left;
+	position: relative;
+	background-color: white;
+}
+
+#textGaleriaInfor h2{
+	font-family: Asap;
+	font-size: 25px;
+	font-weight: bolder;
+	padding-top:80px;
+}
+
+#tituloInformatorio{
+	width: 70%;
+	height: 250px;
+	float: left;
+}
+
+#twitInformatorio{
+	height: 20px;
+	width: 27px;
+	background: url("../img/iconosCelestes.png") repeat 0px -44px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;	
+}
