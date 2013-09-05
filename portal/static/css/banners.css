@@ -4,8 +4,8 @@
 	width: 200px;
 	background-color: rgba(225,225,225,0.5);
 	border-radius: 5px;
-
 }
+
 .logos_secciones {
 	height: 67%;
 	margin-top: 5px;
@@ -67,8 +67,11 @@
 	text-align: center;
 	display: none;
 }
-.subMenu_informatorio a:link{
+.subMenu_informatorio a{
 	text-decoration: none;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
 }
 .subMenu_activado{
 	color: black;
@@ -83,7 +86,13 @@
 	position: relative;	
 	text-align: center;
 	cursor: pointer;
+}
 
+.subMenu_activado a{
+	text-decoration: none;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
 }
 
 .subMenu_informatorio:hover{
