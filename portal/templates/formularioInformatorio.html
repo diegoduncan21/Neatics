@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+
+{% block extra_head %}
+	<link rel="stylesheet" type="text/css" href="/static/css/banners.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/infomacionHome.css">
+	<link rel="stylesheet" href="/static/css/eventos.css">
+	<link href="/static/css/formularioInformatorio.css" rel="stylesheet">
+
+	<!--<script type="text/javascript" src="/static/js/banners.js"></script>-->
+	<script type="text/javascript" src="/static/js/formularioInformatorio.js"></script>
+{% endblock %}
+
+{% block contenido %}
+
+	
+	<aside class='banners'>
+
+		{% include 'banners.html' %}
+
+	</aside>
+
+	<div class="container">
+
+		<div id="form-informatorio">
+			
+			<h1 class="titulo-informatorio">Formulario de Inscripción al Informatorio</h1>
+
+			<form method="post" enctype="text/plain">{% csrf_token %}
+
+				<table class="tabla-formulario-informatorio">
+					<tr>
+						<td>Nombre</td>
+						<td>
+							<input type="text" id="nombre" placeholder="Nombre">
+						</td>
+					</tr>
+
+					<tr>
+						<td>Apellido</td>
+						<td>
+							<input type="text" id="apellido" placeholder="Ingresá Apellido">
+						</td>
+					</tr>
+
+					<tr>
+						<td>DNI</td>
+						<td><input type="text" id="dni" placeholder="ej: 30123456"></td>
+					</tr>
+
+					<tr>
+						<td>Fecha de Nacimiento</td>
+						<td>
+							<input type="date" id="fecha" placeholder="dd-mm-aaaa">
+						</td>
+					</tr>
+
+					<tr>
+						<td>Localidad</td>
+						<td>
+							<input type="text" id="localidad" placeholder="Ingresá Localidad">
+						</td>
+					</tr>
+
+					<tr>
+						<td>Provincia</td>
+						<td>
+							<input type="text" id="provincia" placeholder="Ingresá Provincia">
+						</td>
+					</tr>
+
+					<tr>
+						<td>Telefono</td>
+						<td>
+							<input type="text" id="telefono" placeholder="ej: 3794 123456">
+						</td>
+					</tr>
+
+					<tr>
+						<td>Email</td>	
+						<td>
+							<input type="email" placeholder="usuario@mail.com">
+						</td>	
+					</tr>
+
+					<tr>
+						<td>Facebook</td>
+						<td>
+							<input type="text" id="facebook" placeholder="ej: /MiFacebook">
+						</td>
+					</tr>
+
+					<tr>
+						<td>Secundario</td>
+						<td>
+							<input type="text" id="secundario" placeholder="Ingresá Título">
+						</td>
+					</tr>
+					
+					<tr>
+						<td>¿Universitario?</td>
+						<td>
+							<input type="radio" name="optionsRadios" class="optionsRadios" value="si" checked>
+							Sí
+						</td>
+						<td>
+							<input type="radio" name="optionsRadios" class="optionsRadios" value="no">
+							No
+						</td>
+					</tr>
+					
+					<tr class="universidad">
+						<td>Nombre de la Universidad</td>
+						<td>
+							<input type="text" class="form-control" id="universidad" placeholder="Ingresá Nombre de la Universidad">
+						</td>
+					</tr>
+					
+					<tr class="universidad">
+						<td>Localidad de la Universidad</td>
+						<td>
+							<input type="text" class="form-control" id="localuni" placeholder="Ingresá Localidad de la Universidad">
+						</td>
+					</tr>
+
+					<tr>
+						<td>Motivo de interés en Informática</td>
+						<td>
+							<textarea name="interes" rows="3"></textarea>
+						</td>
+					</tr>
+
+					<tr>
+						<td>Preferencias en Informática</td>
+						<td>
+							<textarea name="preferencias" rows="3"></textarea>
+						</td>
+					</tr>
+
+					<tr>
+						<td>Disponibilidad Horaria</td>
+						<td>
+							<textarea name="disponibilidad" rows="3"></textarea>
+						</td>
+					</tr>
+
+					<tr>
+						<td>¿Qué formación poseés?</td>
+						<td>
+							<textarea name="formacion" rows="3"></textarea>
+						</td>
+					</tr>
+
+					<tr>
+						<td>¿Qué expectativas tenés del Informatorio?</td>
+						<td>
+							<textarea name="expectativas" rows="3"></textarea>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<button class="boton-informatorio" type="submit" id="enviar">Enviar</button>
+						</td>
+					</tr>
+
+				</table>
+				
+			</form>		
+		</div> 		
+
+	</div>
+
+{% endblock %}

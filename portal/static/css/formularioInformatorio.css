@@ -1,0 +1,29 @@
+#form-informatorio {
+	text-align: center;
+}
+
+.titulo-informatorio {
+	color: #01466F;
+	text-decoration: underline;
+	margin: 25px;
+}
+
+.tabla-formulario-informatorio {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tabla-formulario-informatorio td {
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.boton-informatorio {
+	background-color: blue;
+	border-radius: 10px;
+	color: white;
+	float: right;
+	font-size: 15px;
+	padding: 5px;
+	width: 10em;
+}
