@@ -67,7 +67,9 @@
 	text-align: center;
 	display: none;
 }
-
+.subMenu_informatorio a:link{
+	text-decoration: none;
+}
 .subMenu_activado{
 	color: black;
 	font-family: 'Roboto', sans-serif;

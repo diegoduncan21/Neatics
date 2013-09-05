@@ -91,17 +91,17 @@
 }
 
 #cadaExperienciasInfor{
-	width: 725px;
-	margin-left: -100px;
-	height: 200px;
+	width: 420px;
+	margin-left: 130px;
+	margin-top:40px;
 	float: left;
 	border-radius: 8px;
 }
 
 #cadaProyectosInfor{
-	width: 725px;
-	margin-right: -100px;
-	height: 200px;
+	width: 420px;
+	margin-right: 130px;
+	margin-top:40px;
 	float: left;
 	border-radius: 8px;
 }
@@ -109,7 +109,6 @@
 #cadaGaleriaInfor{
 	width: 725px;
 	margin-left: -100px;
-	height: 200px;
 	float: left;
 	border-radius: 8px;
 }
